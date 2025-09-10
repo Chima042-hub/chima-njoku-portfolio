@@ -2,190 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Joseph Chimakpa Njoku | IT Support Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <style>
-    /* Your existing CSS styles here (unchanged) */
-    /* ...including dark mode, scroll button, contact form, etc... */
-
-    /* Project Section Styling */
-    #projects {
-      padding: 40px;
-      background-color: #f9f9f9;
-      text-align: center;
-    }
-
-    #projects h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .project {
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 600px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-    }
-
-    .project h3 {
-      font-size: 1.5rem;
-      color: #0077cc;
-    }
-
-    .project p {
-      font-size: 1rem;
-      color: #555;
-      margin: 10px 0;
-    }
-
-    .project a {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 20px;
-      background-color: #0077cc;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .project a:hover {
-      background-color: #005fa3;
-    }
-  </style>
+  <title>Cat Photo App</title>
 </head>
 <body>
+  <h1>CatPhotoApp</h1>
+  <main>
+    <h2>Cat Photos</h2>
+    <!-- TODO: Add link to cat photos -->
+    <p>Click here to view more cat photos.</p>
+    <a href="https://www.freecatphotoapp.com" target="_blank">More Cat Photos</a>
 
-  <div id="loader"></div>
-  <button id="darkToggle">🌙 Toggle Dark Mode</button>
+    <h3>Things cats love:</h3>
+    <ul>
+      <li>Catnip</li>
+      <li>Laser pointers</li>
+      <li>Lasagna</li>
+    </ul>
 
-  <header class="fade-in">
-    <img src="profile.jpg" alt="Joseph Chimakpa Njoku">
-    <h1>Joseph Chimakpa Njoku</h1>
-    <p>Certified IT Support Specialist | Cybersecurity Learner | Python Enthusiast</p>
-  </header>
+    <h3>Top 3 Cat Breeds</h3>
+    <ol>
+      <li>Persian</li>
+      <li>Siamese</li>
+      <li>Maine Coon</li>
+    </ol>
 
-  <section id="projects" class="section fade-in">
-    <h2>📁 My Projects</h2>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A relaxing cat" width="300">
 
-    <div class="project">
-  <h3>🐱 Cat Photo App</h3>
-  <p>A fun, responsive page showcasing cat breeds and their favorite things. Built with HTML & CSS.</p>
-  <a href="https://chima042-hub.github.io/Cat-Photo-App/" target="_blank">Live Site</a>
-  <a href="https://github.com/chima042-hub/Cat-Photo-App" target="_blank">GitHub Repo</a>
-</div>
+    <form>
+      <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <label><input type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+        <label><input type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+      </fieldset>
 
-    <!-- Add other projects below -->
-    <div class="project">
-      <h3>📝 Survey Form</h3>
-      <p>A clean and accessible form layout for user feedback. Built with HTML & CSS.</p>
-      <a href="https://chima042-hub.github.io/Cat-Photo-App/" target="_blank">Live Site</a>
-      <a href="https://github.com/Chima042-hub/survey-form" target="_blank">GitHub Repo</a>
-    </div>
+      <fieldset>
+        <legend>What does your cat like?</legend>
+        <label><input type="checkbox" name="likes" value="sleeping"> Sleeping</label>
+        <label><input type="checkbox" name="likes" value="playing"> Playing</label>
+        <label><input type="checkbox" name="likes" value="eating"> Eating</label>
+      </fieldset>
 
-    <div class="project">
-      <h3>🌍 Travel Page</h3>
-      <p>A visually engaging travel showcase with responsive layout. Built with HTML & CSS.</p>
-      <a href="https://your-live-link.com" target="_blank">Live Site</a>
-      <a href="https://github.com/Chima042-hub/travel-page" target="_blank">GitHub Repo</a>
-    </div>
-
-    <div class="project">
-      <h3>💼 Finance Loan Website</h3>
-      <p>A professional loan application portal simulating real-world financial UX. Built with HTML & CSS.</p>
-      <a href="https://your-live-link.com" target="_blank">Live Site</a>
-      <a href="https://github.com/Chima042-hub/loan-website" target="_blank">GitHub Repo</a>
-    </div>
-  </section>
-
-  <section class="section resume fade-in">
-    <h2>📄 Resume</h2>
-    <a href="resume.pdf" target="_blank">Download My Resume (PDF)</a>
-  </section>
-
-  <section class="section fade-in">
-    <h2>📬 Contact Me</h2>
-    <p>If you’d like to collaborate, ask a question, or just say hello, feel free to drop me a message below.</p>
-
-    <form class="contact-form" action="https://formspree.io/f/xldwaqpl" method="POST">
-      <h3>Let’s Connect</h3>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-      <input type="hidden" name="_subject" value="New message from portfolio site">
-      <button type="submit">Send Message</button>
-      <p id="formMessage" style="display:none; color:green;">Thanks for reaching out!</p>
+      <input type="text" placeholder="Cat's name" required>
+      <button type="submit">Submit</button>
     </form>
-
-    <p>📧 jennynjoku148@gmail.com | 📱 +27 74 573 9227</p>
-    <p>
-      <a href="https://www.linkedin.com/in/chima-njoku-869690319/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Chima042-hub" target="_blank">GitHub</a>
-    </p>
-    <p>© <span id="year"></span> Joseph Chimakpa Njoku</p>
-  </section>
-
-  <button id="scrollTopBtn">↑ Top</button>
-
-  <script>
-    // Scroll-to-top button
-    const scrollBtn = document.getElementById("scrollTopBtn");
-    window.onscroll = function () {
-      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-    };
-    scrollBtn.onclick = function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-    // Dynamic year
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Form feedback
-    const form = document.querySelector("form");
-    const message = document.getElementById("formMessage");
-    form.addEventListener("submit", function () {
-      setTimeout(() => {
-        message.style.display = "block";
-      }, 1000);
-    });
-
-    // Dark mode toggle
-    document.getElementById("darkToggle").onclick = function () {
-      document.body.classList.toggle("dark-mode");
-      document.querySelector("header").classList.toggle("dark-mode");
-    };
-
-    // Fade-in animations on scroll
-    const fadeElements = document.querySelectorAll('.fade-in');
-    window.addEventListener('scroll', () => {
-      fadeElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          el.classList.add('visible');
-        }
-      });
-    });
-  </script>
+  </main>
 </body>
 </html>
-
-
-
-
-
-
 
