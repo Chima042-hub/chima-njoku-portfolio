@@ -10,20 +10,41 @@ scrollBtn.onclick = function () {
 // Dynamic year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Form feedback
+// Enhanced form feedback with validation
 const form = document.querySelector("form");
 const message = document.getElementById("formMessage");
-form.addEventListener("submit", function () {
+const submitButton = form.querySelector('button[type="submit"]');
+
+form.addEventListener("submit", function (e) {
+  // Disable submit button to prevent double submission
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending...";
+  
+  // Show success message after form submission
   setTimeout(() => {
     message.style.display = "block";
+    submitButton.textContent = "Send Message";
+    submitButton.disabled = false;
   }, 1000);
 });
 
-// Dark mode toggle
-document.getElementById("darkToggle").onclick = function () {
+// Dark mode toggle with localStorage persistence
+function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
   document.querySelector("header").classList.toggle("dark-mode");
-};
+  const isDarkMode = document.body.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode);
+  document.getElementById("darkToggle").textContent = isDarkMode ? "☀️ Toggle Light Mode" : "🌙 Toggle Dark Mode";
+}
+
+// Load saved dark mode preference
+if (localStorage.getItem("darkMode") === "true") {
+  document.body.classList.add("dark-mode");
+  document.querySelector("header").classList.add("dark-mode");
+  document.getElementById("darkToggle").textContent = "☀️ Toggle Light Mode";
+}
+
+document.getElementById("darkToggle").onclick = toggleDarkMode;
 
 // Fade-in animations
 const faders = document.querySelectorAll('.fade-in');
