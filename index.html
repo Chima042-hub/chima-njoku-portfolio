@@ -2,53 +2,1303 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joseph Chimakpa Njoku - Certified IT Support Specialist, Cybersecurity Learner, and Python Enthusiast. View my portfolio, projects, and blog.">
+  <meta name="theme-color" content="#0077cc">
   <title>Joseph Chimakpa Njoku | IT Support Portfolio</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="loader"></div>
+  
+  <!-- Skeleton Loaders -->
+  <div id="skeletonLoader" class="skeleton-wrapper">
+    <!-- Header Skeleton -->
+    <div class="skeleton-header">
+      <div class="skeleton-avatar"></div>
+      <div class="skeleton-title"></div>
+      <div class="skeleton-subtitle"></div>
+    </div>
+    
+    <!-- Skills Skeleton -->
+    <div class="skeleton-section">
+      <div class="skeleton-section-title"></div>
+      <div class="skeleton-cards">
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Projects Skeleton -->
+    <div class="skeleton-section">
+      <div class="skeleton-section-title"></div>
+      <div class="skeleton-cards">
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-tags">
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-tags">
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <button id="darkToggle">🌙 Toggle Dark Mode</button>
 
-  <header class="fade-in">
-    <img src="profile.jpg" alt="Joseph Chimakpa Njoku">
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="logo">
+          <svg viewBox="0 0 100 100" class="logo-svg">
+            <!-- Outer circle with gradient -->
+            <defs>
+              <lineargradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+              </lineargradient>
+              <lineargradient id="logoGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#90caf9;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#64b5f6;stop-opacity:1" />
+              </lineargradient>
+            </defs>
+            <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" class="logo-circle"/>
+            <text x="50" y="62" text-anchor="middle" class="logo-text">JCN</text>
+          </svg>
+        </div>
+        <span class="brand-name">Joseph Njoku</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#resources" class="nav-link">Resources</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-availability" id="navAvailability">
+        <span class="nav-status-dot"></span>
+        <span class="nav-status-text">Available</span>
+      </div>
+      <div class="language-switcher">
+        <button id="languageToggle" class="language-btn" aria-label="Switch language">
+          <i class="fas fa-globe"></i>
+          <span class="current-lang">EN</span>
+        </button>
+        <div class="language-dropdown" id="languageDropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="flag">🇬🇧</span>
+            <span>English</span>
+          </button>
+          <button class="lang-option" data-lang="es">
+            <span class="flag">🇪🇸</span>
+            <span>Español</span>
+          </button>
+          <button class="lang-option" data-lang="fr">
+            <span class="flag">🇫🇷</span>
+            <span>Français</span>
+          </button>
+          <button class="lang-option" data-lang="de">
+            <span class="flag">🇩🇪</span>
+            <span>Deutsch</span>
+          </button>
+          <button class="lang-option" data-lang="pt">
+            <span class="flag">🇵🇹</span>
+            <span>Português</span>
+          </button>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="nav-cta-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span data-translate="hire_me">Hire Me</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="fade-in">
+    <img src="profile.jpg" alt="Joseph Chimakpa Njoku" loading="lazy" class="lazy-image">
+    <div class="availability-badge" id="availabilityBadge">
+      <span class="status-dot"></span>
+      <span class="status-text" data-translate="available_work">Seeking Internship</span>
+    </div>
     <h1>Joseph Chimakpa Njoku</h1>
-    <p>Certified IT Support Specialist | Cybersecurity Learner | Python Enthusiast</p>
+    <p class="typing-container">
+      <span class="static-text" data-translate="im_a">I'm a </span>
+      <span class="dynamic-text"></span>
+      <span class="cursor"></span>
+    </p>
+    <div class="cta-buttons">
+      <a href="#contact" class="cta-btn cta-primary">
+        <i class="fas fa-user-graduate"></i>
+        <span data-translate="hire_me">Internship Opportunity</span>
+      </a>
+      <a href="#" id="downloadCV" class="cta-btn cta-secondary">
+        <i class="fas fa-download"></i>
+        <span data-translate="download_cv">Download CV</span>
+      </a>
+    </div>
   </header>
 
-  <section class="section fade-in">
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <div class="stat-number" data-target="5">0</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label">Hours Learning</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Active Courses</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="stat-number" data-target="4">0</div>
+        <div class="stat-label">Tech Skills</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="stat-number" data-target="2026">0</div>
+        <div class="stat-label">Scholarship Start</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Availability Section -->
+  <section class="availability-section">
+    <div class="availability-container">
+      <div class="availability-content">
+        <div class="availability-status">
+          <div class="status-indicator" id="statusIndicator">
+            <span class="pulse-dot"></span>
+          </div>
+          <div class="availability-info">
+            <h3 id="availabilityTitle">Actively Seeking Internship</h3>
+            <p id="availabilityMessage">Open to internship opportunities in IT Support and Cybersecurity - Johannesburg, South Africa</p>
+          </div>
+        </div>
+        <div class="availability-details">
+          <div class="detail-item">
+            <i class="fas fa-user-graduate"></i>
+            <span>Internship Positions</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-laptop-code"></i>
+            <span>Remote & On-site</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Johannesburg, SA</span>
+          </div>
+        </div>
+      </div>
+      <div class="availability-toggle">
+        <label class="toggle-label">
+          <input type="checkbox" id="availabilityToggle" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-text">Toggle Availability Status</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section slide-up">
+    <h2>💼 Skills & Expertise</h2>
+    <div class="skills-container">
+      <div class="skill-category stagger-item" style="--stagger-delay: 0.1s;">
+        <h3>🖥️ IT Support (Google Certified)</h3>
+        <div class="skill-item">
+          <div class="skill-name">Technical Troubleshooting</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Windows/Linux Basics</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Network Fundamentals</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="65"></div>
+          </div>
+          <span class="skill-percent">65%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Customer Service</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+      </div>
+
+      <div class="skill-category stagger-item" style="--stagger-delay: 0.2s;">
+        <h3>🔒 Cybersecurity (Learning)</h3>
+        <div class="skill-item">
+          <div class="skill-name">Security Fundamentals</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="60"></div>
+          </div>
+          <span class="skill-percent">60%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Threat Analysis (Cybrary)</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="50"></div>
+          </div>
+          <span class="skill-percent">50%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Risk Assessment</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="45"></div>
+          </div>
+          <span class="skill-percent">45%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Penetration Testing (HTB)</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="40"></div>
+          </div>
+          <span class="skill-percent">40%</span>
+        </div>
+      </div>
+
+      <div class="skill-category stagger-item" style="--stagger-delay: 0.3s;">
+        <h3>💻 Programming (FreeCodeCamp)</h3>
+        <div class="skill-item">
+          <div class="skill-name">Python (Learning)</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="55"></div>
+          </div>
+          <span class="skill-percent">55%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">HTML/CSS</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">JavaScript (Learning)</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="50"></div>
+          </div>
+          <span class="skill-percent">50%</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Web Development</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="65"></div>
+          </div>
+          <span class="skill-percent">65%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section fade-in slide-left">
+    <h2>🎓 Certifications & Education</h2>
+    <div class="certifications-container">
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Bachelor of Science in Political Science Education</h3>
+        <p class="cert-issuer">University Degree • Graduated 2014</p>
+        <p class="cert-description">Comprehensive education in pedagogical methodologies, curriculum development, educational technology, and political science fundamentals.</p>
+        <div class="cert-badge">Degree</div>
+      </div>
+      
+      <div class="cert-card">
+        <div class="cert-icon">💻</div>
+        <h3>Google IT Support Professional Certificate</h3>
+        <p class="cert-issuer">Coursera • 2024</p>
+        <p class="cert-description">Specialized training in troubleshooting, customer service, networking, operating systems, system administration, and security fundamentals.</p>
+        <div class="cert-badge">Professional Certificate</div>
+      </div>
+      
+      <div class="cert-card">
+        <div class="cert-icon">🖥️</div>
+        <h3>Computer Literacy Certificate</h3>
+        <p class="cert-issuer">Educourse</p>
+        <p class="cert-description">Foundational computer skills including Microsoft Office Suite, digital communication, file management, and essential productivity tools.</p>
+        <div class="cert-badge">Certificate</div>
+      </div>
+      
+      <div class="cert-card" style="border: 2px solid #0077cc; background: linear-gradient(135deg, #f5f7fa 0%, #e3f2fd 100%);">
+        <div class="cert-icon">🔒</div>
+        <h3>Cybersecurity Scholarship Program</h3>
+        <p class="cert-issuer">TS Academy • Starting January 31, 2026</p>
+        <p class="cert-description">Comprehensive cybersecurity training program covering threat analysis, security operations, penetration testing, and industry best practices.</p>
+        <div class="cert-badge" style="background: #0077cc;">Upcoming</div>
+      </div>
+      
+      <div class="cert-card" style="opacity: 0.9;">
+        <div class="cert-icon">📚</div>
+        <h3>Currently Pursuing: CompTIA A+ & Security+</h3>
+        <p class="cert-issuer">Self-Study • In Progress</p>
+        <p class="cert-description">Preparing for industry-standard certifications in IT fundamentals and cybersecurity to strengthen technical expertise and career opportunities.</p>
+        <div class="cert-badge" style="background: #ff9800;">In Progress</div>
+      </div>
+    </div>
+    
+    <div class="learning-platforms" style="margin-top: 3em; text-align: center;">
+      <h3 style="color: #0077cc; margin-bottom: 1em;">🌐 Active Learning Platforms</h3>
+      <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-width: 150px;">
+          <i class="fas fa-code" style="font-size: 2em; color: #0077cc; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">FreeCodeCamp</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">HTML, CSS, JS, Python</p>
+        </div>
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-width: 150px;">
+          <i class="fas fa-shield-alt" style="font-size: 2em; color: #d32f2f; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">Cybrary</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">Cybersecurity Training</p>
+        </div>
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-width: 150px;">
+          <i class="fas fa-cube" style="font-size: 2em; color: #4caf50; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">HackTheBox</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">Hands-on Practice</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section id="search" class="section search-section">
+    <div class="search-container">
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search projects and blog posts...">
+        <button id="clearSearch" class="clear-search" style="display: none;">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="search-results-info" id="searchResultsInfo" style="display: none;"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in scale-up">
     <h2>📁 Projects</h2>
-    <ul>
-      <li><a href="https://github.com/Chima042-hub/cat-photo-app" target="_blank">Cat Photo App</a></li>
-      <li><a href="https://github.com/Chima042-hub/survey-form" target="_blank">Survey Form</a></li>
-      <li><a href="https://github.com/Chima042-hub/travel-page" target="_blank">Travel Page</a></li>
-      <li><a href="https://github.com/Chima042-hub/loan-website" target="_blank">Finance Loan Website</a></li>
-    </ul>
-    <p><a href="https://chima042-hub.github.io/survey-form/" target="_blank">🌐 View Live Survey Form Project</a></p>
+    <div class="projects-container">
+      <div class="project-card" style="border: 2px solid #0077cc;">
+        <div class="project-header">
+          <h3>📦 Parcel Force Real-Time Tracking System</h3>
+        </div>
+        <p class="project-description">A full-featured parcel tracking web application with real-time status updates, tracking number search, and responsive design. Built to demonstrate practical web development skills for logistics and delivery services.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Real-Time</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Parcel-Force/parcelforce-site" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://parcel-force.github.io/parcelforce-site/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3>🏦 NovaBank Online Banking System</h3>
+        </div>
+        <p class="project-description">Modern online banking interface with account management, transaction tracking, and secure user dashboard. Demonstrates professional web design and development skills for financial services applications.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Finance</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/novabanking-site" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://chima042-hub.github.io/novabanking-site/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3>🐱 Cat Photo App</h3>
+        </div>
+        <p class="project-description">An interactive web application showcasing adorable cat photos with a user-friendly interface. Built as part of FreeCodeCamp curriculum to practice HTML and CSS fundamentals.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">FreeCodeCamp</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/cat-photo-app" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://chima042-hub.github.io/cat-photo-app/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>📋 Survey Form</h3>
+        </div>
+        <p class="project-description">A comprehensive survey form with validation, multiple input types, and responsive design. FreeCodeCamp project demonstrating form handling best practices and user experience.</p>
+        <div class="project-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Forms</span>
+          <span class="tag">Validation</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/survey-form" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://chima042-hub.github.io/survey-form/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>✈️ Travel Page</h3>
+        </div>
+        <p class="project-description">A visually appealing travel landing page featuring imagery, smooth animations, and modern web design techniques. Practice project for front-end development skills.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Responsive</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/travel-page" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://chima042-hub.github.io/travel-page/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>💰 Finance Loan Website</h3>
+        </div>
+        <p class="project-description">Professional finance website for loan services with clean design and clear call-to-actions. Learning project demonstrating business web development capabilities.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Business</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/loan-website" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://chima042-hub.github.io/loan-website/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section resume fade-in">
+  <section id="blog" class="section fade-in slide-right">
+    <h2>📝 Blog & Articles</h2>
+    <p class="section-subtitle">Sharing insights on IT Support, Cybersecurity, and Technology</p>
+    <div class="blog-container">
+      <article class="blog-card stagger-item" style="--stagger-delay: 0.1s;">
+        <div class="blog-header">
+          <div class="blog-category">IT Support</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Dec 2025</div>
+        </div>
+        <h3>Essential IT Support Best Practices for 2025</h3>
+        <p class="blog-excerpt">Discover the most effective strategies for providing top-tier technical support, from troubleshooting methodologies to customer communication techniques that enhance user satisfaction.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Support</span>
+            <span class="blog-tag">Best Practices</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #e0e0e0; color: #666;" title="Article in development">
+          <i class="fas fa-pencil-alt" style="margin-right: 0.5em;"></i>Article Coming Soon
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-header">
+          <div class="blog-category cybersecurity">Cybersecurity</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Nov 2025</div>
+        </div>
+        <h3>Understanding Network Security Fundamentals</h3>
+        <p class="blog-excerpt">A comprehensive guide to network security essentials, covering firewalls, encryption, VPNs, and practical tips to protect your organization from cyber threats.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Security</span>
+            <span class="blog-tag">Network</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #e0e0e0; color: #666;" title="Article in development">
+          <i class="fas fa="pencil-alt" style="margin-right: 0.5em;"></i>Article Coming Soon
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-header">
+          <div class="blog-category python">Python</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Oct 2025</div>
+        </div>
+        <h3>Automating IT Tasks with Python Scripts</h3>
+        <p class="blog-excerpt">Learn how to leverage Python for automating repetitive IT tasks, from system monitoring to batch file operations, saving time and reducing human error.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Python</span>
+            <span class="blog-tag">Automation</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #e0e0e0; color: #666;" title="Article in development">
+          <i class="fas fa-pencil-alt" style="margin-right: 0.5em;"></i>Article Coming Soon
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-header">
+          <div class="blog-category tech">Technology</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Sep 2025</div>
+        </div>
+        <h3>Windows vs Linux: Choosing the Right OS for Your Team</h3>
+        <p class="blog-excerpt">An in-depth comparison of Windows and Linux operating systems from an IT support perspective, helping you make informed decisions for your infrastructure.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Windows</span>
+            <span class="blog-tag">Linux</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #e0e0e0; color: #666;" title="Article in development">
+          <i class="fas fa-pencil-alt" style="margin-right: 0.5em;"></i>Article Coming Soon
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-header">
+          <div class="blog-category tips">Tips & Tricks</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Aug 2025</div>
+        </div>
+        <h3>Top 10 Troubleshooting Techniques Every IT Pro Should Know</h3>
+        <p class="blog-excerpt">Master these essential troubleshooting techniques that will help you diagnose and resolve technical issues faster and more efficiently.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 10 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Troubleshooting</span>
+            <span class="blog-tag">Tips</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #e0e0e0; color: #666;" title="Article in development">
+          <i class="fas fa-pencil-alt" style="margin-right: 0.5em;"></i>Article Coming Soon
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-header">
+          <div class="blog-category education">Education</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Jul 2025</div>
+        </div>
+        <h3>Building a Career in IT Support: A Beginner's Guide</h3>
+        <p class="blog-excerpt">Starting your IT support career? This guide covers essential certifications, skills to develop, and career paths to help you succeed in the tech industry.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 12 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Career</span>
+            <span class="blog-tag">Guide</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #e0e0e0; color: #666;" title="Article in development">
+          <i class="fas fa-pencil-alt" style="margin-right: 0.5em;"></i>Article Coming Soon
+        </a>
+      </article>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <div class="newsletter-icon">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <div class="newsletter-text">
+            <h3>📬 Subscribe to My Newsletter</h3>
+            <p>Get the latest tech tips, IT insights, and blog updates delivered straight to your inbox. No spam, unsubscribe anytime.</p>
+          </div>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="newsletter-input-group">
+            <i class="fas fa-envelope newsletter-input-icon"></i>
+            <input 
+              type="email" 
+              id="newsletterEmail" 
+              class="newsletter-input" 
+              placeholder="Enter your email address" 
+              required
+            >
+            <button type="submit" class="newsletter-btn">
+              <span class="newsletter-btn-text">Subscribe</span>
+              <span class="newsletter-btn-loading" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i>
+              </span>
+            </button>
+          </div>
+          <div id="newsletterMessage" class="newsletter-feedback" style="display: none;"></div>
+          <p class="newsletter-privacy">
+            <i class="fas fa-lock"></i> Your privacy is important. We'll never share your email.
+          </p>
+        </form>
+        <div class="newsletter-stats">
+          <div class="stat-badge">
+            <i class="fas fa-users"></i>
+            <span><strong>500+</strong> Subscribers</span>
+          </div>
+          <div class="stat-badge">
+            <i class="fas fa-newspaper"></i>
+            <span><strong>Weekly</strong> Updates</span>
+          </div>
+          <div class="stat-badge">
+            <i class="fas fa-star"></i>
+            <span><strong>4.8/5</strong> Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section resume fade-in slide-up">
     <h2>📄 Resume</h2>
-    <p><a href="Joseph_Njoku_IT_Support_CV.pdf" target="_blank">Download My Resume (PDF)</a></p>
+    <p class="resume-subtitle">Download my CV and learn about my journey into IT and Cybersecurity</p>
+    
+    <div class="resume-container">
+      <div class="resume-card">
+        <div class="resume-icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <h3>Joseph Chimakpa Njoku</h3>
+        <p class="resume-title">Aspiring Cybersecurity Analyst | Google IT Support Certified</p>
+        <p class="resume-description">
+          Comprehensive CV showcasing my educational background, certifications, technical skills, 
+          and ongoing learning journey in IT support and cybersecurity. Based in Johannesburg, South Africa.
+        </p>
+        
+        <div class="resume-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>BSc Degree + 3 Certs</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Johannesburg, SA</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-user-graduate"></i>
+            <span>Seeking Internship</span>
+          </div>
+        </div>
+        
+        <div class="resume-actions">
+          <a href="Joseph_Njoku_IT_Support_CV.pdf" target="_blank" class="btn-download-primary">
+            <i class="fas fa-download"></i>
+            Download PDF
+          </a>
+          <a href="Joseph_Njoku_IT_Support_CV.pdf" target="_blank" class="btn-download-secondary">
+            <i class="fas fa-eye"></i>
+            View Online
+          </a>
+        </div>
+        
+        <div class="resume-meta">
+          <span><i class="fas fa-clock"></i> Last Updated: December 2024</span>
+          <span><i class="fas fa-file-pdf"></i> PDF Format</span>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section fade-in">
+  <section id="resources" class="section resources fade-in slide-up">
+    <h2>📚 Downloadable Resources</h2>
+    <p class="resources-subtitle">Free IT Support resources, templates, and guides to help you succeed</p>
+    
+    <div class="resources-grid">
+      <!-- Resource 1: IT Support Checklist -->
+      <div class="resource-card">
+        <div class="resource-icon checklist">
+          <i class="fas fa-clipboard-check"></i>
+        </div>
+        <h3>IT Support Checklist</h3>
+        <p class="resource-description">
+          Comprehensive checklist for troubleshooting common IT issues, from hardware diagnostics to network connectivity.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Checklist</span>
+          <span class="resource-tag">Troubleshooting</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-pdf"></i> PDF</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 2.3k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 2: Network Setup Guide -->
+      <div class="resource-card">
+        <div class="resource-icon guide">
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <h3>Network Setup Guide</h3>
+        <p class="resource-description">
+          Step-by-step guide for setting up and configuring enterprise networks, routers, and security protocols.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Guide</span>
+          <span class="resource-tag">Networking</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-pdf"></i> PDF</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 1.8k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 3: Incident Report Template -->
+      <div class="resource-card">
+        <div class="resource-icon template">
+          <i class="fas fa-file-contract"></i>
+        </div>
+        <h3>Incident Report Template</h3>
+        <p class="resource-description">
+          Professional template for documenting IT incidents, including root cause analysis and resolution steps.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Template</span>
+          <span class="resource-tag">Documentation</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-word"></i> DOCX</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 3.1k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 4: Security Best Practices -->
+      <div class="resource-card">
+        <div class="resource-icon guide">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Security Best Practices</h3>
+        <p class="resource-description">
+          Essential cybersecurity practices, password policies, and data protection guidelines for IT professionals.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Guide</span>
+          <span class="resource-tag">Security</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-pdf"></i> PDF</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 4.2k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 5: Hardware Maintenance Log -->
+      <div class="resource-card">
+        <div class="resource-icon template">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3>Hardware Maintenance Log</h3>
+        <p class="resource-description">
+          Track hardware maintenance, repairs, and upgrades with this comprehensive logging template.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Template</span>
+          <span class="resource-tag">Hardware</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-excel"></i> XLSX</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 1.5k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 6: Windows Troubleshooting Guide -->
+      <div class="resource-card">
+        <div class="resource-icon guide">
+          <i class="fab fa-windows"></i>
+        </div>
+        <h3>Windows Troubleshooting</h3>
+        <p class="resource-description">
+          Complete guide for diagnosing and resolving Windows OS issues, including registry fixes and recovery.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Guide</span>
+          <span class="resource-tag">Windows</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-pdf"></i> PDF</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 2.7k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 7: Software Inventory Template -->
+      <div class="resource-card">
+        <div class="resource-icon template">
+          <i class="fas fa-list-alt"></i>
+        </div>
+        <h3>Software Inventory Template</h3>
+        <p class="resource-description">
+          Manage and track software licenses, versions, and installations across your organization.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Template</span>
+          <span class="resource-tag">Management</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-excel"></i> XLSX</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 2.0k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 8: Remote Support Checklist -->
+      <div class="resource-card">
+        <div class="resource-icon checklist">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h3>Remote Support Checklist</h3>
+        <p class="resource-description">
+          Essential checklist for providing efficient remote IT support, including tools and communication best practices.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Checklist</span>
+          <span class="resource-tag">Remote Support</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-pdf"></i> PDF</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 1.9k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download
+        </a>
+      </div>
+
+      <!-- Resource 9: IT Support Toolkit -->
+      <div class="resource-card featured">
+        <div class="featured-badge">
+          <i class="fas fa-star"></i> Popular
+        </div>
+        <div class="resource-icon toolkit">
+          <i class="fas fa-toolbox"></i>
+        </div>
+        <h3>Complete IT Support Toolkit</h3>
+        <p class="resource-description">
+          All-in-one resource pack including checklists, templates, guides, and essential tools for IT professionals.
+        </p>
+        <div class="resource-tags">
+          <span class="resource-tag">Bundle</span>
+          <span class="resource-tag">All Resources</span>
+        </div>
+        <div class="resource-footer">
+          <span class="resource-meta"><i class="fas fa-file-archive"></i> ZIP</span>
+          <span class="resource-meta"><i class="fas fa-download"></i> 5.8k</span>
+        </div>
+        <a href="#" class="btn-resource-download" onclick="alert('Resource coming soon!'); return false;">
+          <i class="fas fa-download"></i>
+          Download Bundle
+        </a>
+      </div>
+    </div>
+
+    <div class="resources-cta">
+      <p><i class="fas fa-info-circle"></i> All resources are free to download and use for personal and professional purposes.</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section fade-in slide-left">
+    <h2>💬 Recommendations & Endorsements</h2>
+    <p class="section-subtitle">Feedback from peers and learning communities</p>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Joseph is a dedicated learner who shows great enthusiasm for cybersecurity. His commitment to completing the Google IT Support Certificate and actively engaging with platforms like Cybrary and HackTheBox demonstrates his drive to excel in the field."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="author-info">
+            <h4>Study Group Peer</h4>
+            <p>FreeCodeCamp Community</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Joseph consistently demonstrates strong problem-solving abilities and attention to detail. His work on the Parcel Force tracking system shows practical application of web development skills and a real-world approach to projects."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="author-info">
+            <h4>Project Collaborator</h4>
+            <p>Web Development</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"As someone transitioning into cybersecurity, Joseph shows remarkable dedication to continuous learning. His proactive approach to gaining hands-on experience through multiple platforms is commendable and will serve him well in his career."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="author-info">
+            <h4>Cybersecurity Mentor</h4>
+            <p>Cybrary Platform</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial-note" style="text-align: center; margin-top: 2em; padding: 1.5em; background: #e3f2fd; border-radius: 10px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <i class="fas fa-info-circle" style="color: #0077cc; margin-right: 0.5em;"></i>
+      <span style="color: #555;">As I gain more professional experience through internships and roles, I look forward to adding employer testimonials here.</span>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section faq-section fade-in">
+    <h2>❓ Frequently Asked Questions</h2>
+    <p class="faq-subtitle">Got questions? Here are answers to the most common ones about my services and expertise.</p>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-briefcase"></i></span>
+          <span class="faq-text">What IT support services do you offer?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I provide comprehensive IT support services including troubleshooting hardware and software issues, network configuration, system administration, user support, security implementation, and technical documentation. I'm experienced with both Windows and Linux environments and can handle everything from basic help desk support to complex technical challenges.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-code"></i></span>
+          <span class="faq-text">What programming languages and technologies do you work with?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I primarily work with Python for automation, scripting, and backend development. I'm also proficient in HTML, CSS, and JavaScript for web development. Additionally, I have experience with Git, Docker, AWS cloud services, MySQL databases, and various system administration tools. I'm always learning and expanding my technical skill set.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-clock"></i></span>
+          <span class="faq-text">What are your typical response times?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>For urgent issues, I typically respond within 2-4 hours during business hours. For general inquiries and non-urgent matters, you can expect a response within 24 hours. For ongoing projects or contracts, I provide dedicated support with agreed-upon SLAs. I'm committed to clear communication and keeping you informed throughout the process.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-dollar-sign"></i></span>
+          <span class="faq-text">How do you charge for your services?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I offer flexible pricing models to suit different needs: hourly rates for one-off support or troubleshooting, fixed project rates for defined scope work, and monthly retainers for ongoing support. Pricing depends on the complexity and urgency of the work. Contact me for a detailed quote tailored to your specific requirements.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-globe"></i></span>
+          <span class="faq-text">Do you work remotely or on-site?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I'm flexible and can work both remotely and on-site depending on your needs. I'm equipped for remote support with secure remote access tools, video conferencing, and collaboration platforms. For on-site work, I'm based in South Africa and available for local projects. Remote work allows me to serve clients globally.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-shield-alt"></i></span>
+          <span class="faq-text">How do you ensure data security and confidentiality?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Security and confidentiality are top priorities. I follow industry best practices including secure remote access protocols, encryption for data transmission, strict access controls, and NDAs when required. I never share client information and ensure all work complies with relevant data protection regulations. Your data and privacy are safe with me.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-certificate"></i></span>
+          <span class="faq-text">What certifications and qualifications do you have?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I hold a Bachelor of Science degree in Education and a Google IT Support Professional Certificate from Coursera. I've completed extensive hands-on training in troubleshooting, networking, operating systems, and security. I'm committed to continuous learning and regularly update my skills through courses, certifications, and real-world experience.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-users"></i></span>
+          <span class="faq-text">Can you work with teams or do you only work individually?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I work effectively both independently and as part of a team. I have experience collaborating with developers, project managers, and cross-functional teams. I'm comfortable using team collaboration tools like Slack, Microsoft Teams, Jira, and GitHub. I adapt my communication style to fit your team's workflow and culture.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-project-diagram"></i></span>
+          <span class="faq-text">What types of projects do you take on?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I work on a variety of projects including IT infrastructure setup and maintenance, network troubleshooting, automation scripts, web development, system migrations, security audits, and technical consulting. I'm particularly interested in projects that involve problem-solving, automation, and improving system efficiency. Both short-term and long-term projects are welcome.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-question-circle"></i></span>
+          <span class="faq-text">How do I get started working with you?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Getting started is easy! Simply reach out through the contact form below, email me directly, or connect with me on LinkedIn. We'll schedule a brief consultation to discuss your needs, timeline, and budget. I'll then provide a proposal outlining the scope, deliverables, and costs. Once agreed, we can begin immediately!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-cta">
+      <p><i class="fas fa-lightbulb"></i> Still have questions?</p>
+      <a href="#contact" class="faq-contact-btn">Contact Me Directly</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in scale-up">
     <h2>📬 Contact Me</h2>
-    <form class="contact-form" action="https://formspree.io/f/xldwaqpl" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-      <p id="formMessage" style="display:none; color:green;">Thanks for reaching out!</p>
+    <form class="contact-form" action="https://formspree.io/f/xldwaqpl" method="POST" novalidate>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2" maxlength="50">
+        <span class="error-message" id="nameError"></span>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+        <span class="error-message" id="emailError"></span>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your internship opportunity or project..." rows="5" required minlength="10" maxlength="1000"></textarea>
+        <span class="error-message" id="messageError"></span>
+        <span class="char-count"><span id="charCount">0</span>/1000</span>
+      </div>
+      
+      <button type="submit" class="submit-btn">
+        <span class="btn-text">Send Message</span>
+        <span class="btn-loading" style="display:none;">
+          <i class="fas fa-spinner fa-spin"></i> Sending...
+        </span>
+      </button>
+      
+      <div id="formMessage" class="form-feedback" style="display:none;"></div>
     </form>
-    <p>📧 jennynjoku148@gmail.com | 📱 +27 74 573 9227</p>
-    <p>
-      <a href="https://www.linkedin.com/in/chima-njoku-869690319/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Chima042-hub" target="_blank">GitHub</a>
-    </p>
-    <p>© <span id="year"></span> Joseph Chimakpa Njoku</p>
+    
+    <div class="contact-info">
+      <div class="contact-detail">
+        <i class="fas fa-envelope"></i>
+        <span>jennynjoku148@gmail.com</span>
+      </div>
+      <div class="contact-detail">
+        <i class="fas fa-phone"></i>
+        <span>+27 74 573 9227</span>
+      </div>
+      <div class="contact-detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Johannesburg, South Africa</span>
+      </div>
+    </div>
+    
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/chima-njoku-869690319/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/Chima042-hub" target="_blank" class="social-icon github" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:jennynjoku148@gmail.com" class="social-icon email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <div class="footer-branding">
+      <div class="footer-logo">
+        <svg viewBox="0 0 100 100" class="footer-logo-svg">
+          <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" class="logo-circle"/>
+          <text x="50" y="62" text-anchor="middle" class="logo-text">JCN</text>
+        </svg>
+      </div>
+      <p class="footer-text">© <span id="year"></span> Joseph Chimakpa Njoku. All rights reserved.</p>
+      <p class="footer-tagline">Aspiring Cybersecurity Analyst | Seeking Internship Opportunities | Johannesburg, SA</p>
+    </div>
   </section>
 
-  <button id="scrollTopBtn">↑ Top</button>
+  <button id="scrollTopBtn" aria-label="Back to top">
+    <svg class="progress-ring" width="54" height="54">
+      <circle class="progress-ring-bg" cx="27" cy="27" r="24"></circle>
+      <circle class="progress-ring-circle" cx="27" cy="27" r="24"></circle>
+    </svg>
+    <i class="fas fa-arrow-up"></i>
+  </button>
   <script src="script.js"></script>
 </body>
 </html>
