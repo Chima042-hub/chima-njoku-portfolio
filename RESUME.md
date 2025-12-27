@@ -1,7 +1,7 @@
 # CHIMA NJOKU
 **Full-Stack Developer | Cybersecurity Enthusiast**
 
-Email: your.email@example.com | Phone: (123) 456-7890  
+Email: jennynjoku148@gmail.com | Phone: +27745739227 
 Portfolio: yourportfolio.com | GitHub: github.com/yourusername  
 LinkedIn: linkedin.com/in/yourusername
 

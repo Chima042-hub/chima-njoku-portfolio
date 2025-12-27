@@ -53,11 +53,10 @@ if (downloadCVBtn) {
   downloadCVBtn.addEventListener("click", function(e) {
     e.preventDefault();
     
-    // Create and trigger download
+    // Open resume on GitHub
     const link = document.createElement('a');
-    link.href = 'Joseph_Njoku_IT_Support_CV.pdf';
-    link.download = 'Joseph_Njoku_IT_Support_CV.pdf';
-    link.target = '_blank'; // Also open in new tab as fallback
+    link.href = 'https://github.com/Chima042-hub/chima-njoku-portfolio/blob/main/RESUME.md';
+    link.target = '_blank';
     link.rel = 'noopener noreferrer';
     document.body.appendChild(link);
     link.click();
@@ -65,7 +64,7 @@ if (downloadCVBtn) {
     
     // Show success message
     const originalContent = this.innerHTML;
-    this.innerHTML = '<i class="fas fa-check"></i><span>Opening CV...</span>';
+    this.innerHTML = '<i class="fas fa-check"></i><span>Opening Resume...</span>';
     this.style.pointerEvents = 'none';
     
     // Reset after 2 seconds
