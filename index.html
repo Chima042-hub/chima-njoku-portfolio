@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joseph Chimakpa Njoku - Entry-level IT support and help desk candidate, currently studying cybersecurity at TS Academy. View my portfolio projects and learning journey.">
+  <meta name="theme-color" content="#0077cc">
+  <title>Joseph Chimakpa Njoku | IT Support Portfolio</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader"></div>
+  
+  <!-- Skeleton Loaders -->
+  <div id="skeletonLoader" class="skeleton-wrapper">
+    <!-- Header Skeleton -->
+    <div class="skeleton-header">
+      <div class="skeleton-avatar"></div>
+      <div class="skeleton-title"></div>
+      <div class="skeleton-subtitle"></div>
+    </div>
+    
+    <!-- Skills Skeleton -->
+    <div class="skeleton-section">
+      <div class="skeleton-section-title"></div>
+      <div class="skeleton-cards">
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Projects Skeleton -->
+    <div class="skeleton-section">
+      <div class="skeleton-section-title"></div>
+      <div class="skeleton-cards">
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-tags">
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-card-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-tags">
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+            <div class="skeleton-tag"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="darkToggle">🌙 Toggle Dark Mode</button>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="logo">
+          <svg viewBox="0 0 100 100" class="logo-svg">
+            <!-- Outer circle with gradient -->
+            <defs>
+              <lineargradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+              </lineargradient>
+              <lineargradient id="logoGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#90caf9;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#64b5f6;stop-opacity:1" />
+              </lineargradient>
+            </defs>
+            <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" class="logo-circle"/>
+            <text x="50" y="62" text-anchor="middle" class="logo-text">JCN</text>
+          </svg>
+        </div>
+        <span class="brand-name">Joseph Njoku</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#blog" class="nav-link">Lab Notes</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-availability" id="navAvailability">
+        <span class="nav-status-dot"></span>
+        <span class="nav-status-text">Available</span>
+      </div>
+      <div class="language-switcher">
+        <button id="languageToggle" class="language-btn" aria-label="Switch language">
+          <i class="fas fa-globe"></i>
+          <span class="current-lang">EN</span>
+        </button>
+        <div class="language-dropdown" id="languageDropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="flag">🇬🇧</span>
+            <span>English</span>
+          </button>
+          <button class="lang-option" data-lang="es">
+            <span class="flag">🇪🇸</span>
+            <span>Español</span>
+          </button>
+          <button class="lang-option" data-lang="fr">
+            <span class="flag">🇫🇷</span>
+            <span>Français</span>
+          </button>
+          <button class="lang-option" data-lang="de">
+            <span class="flag">🇩🇪</span>
+            <span>Deutsch</span>
+          </button>
+          <button class="lang-option" data-lang="pt">
+            <span class="flag">🇵🇹</span>
+            <span>Português</span>
+          </button>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="nav-cta-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span data-translate="hire_me">Hire Me</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="fade-in">
+    <img src="profile.jpg" alt="Joseph Chimakpa Njoku" loading="lazy" class="lazy-image">
+    <div class="availability-badge" id="availabilityBadge">
+      <span class="status-dot"></span>
+      <span class="status-text" data-translate="available_work">Seeking Internship</span>
+    </div>
+    <h1>Joseph Chimakpa Njoku</h1>
+    <p class="typing-container">
+      <span class="static-text" data-translate="im_a">I'm a </span>
+      <span class="dynamic-text"></span>
+      <span class="cursor"></span>
+    </p>
+    <p class="current-focus" style="margin: 0.5em 0 1.2em 0; color: #005fa3; font-weight: 600; font-size: 0.98em;">
+      <i class="fas fa-shield-alt"></i> Current Focus: TS Academy Cybersecurity Scholarship Program (4–5 months) • Started January 31, 2026 • Expected completion: May–June 2026
+    </p>
+    <div class="cta-buttons">
+      <a href="#contact" class="cta-btn cta-primary">
+        <i class="fas fa-user-graduate"></i>
+        <span data-translate="hire_me">Internship Opportunity</span>
+      </a>
+      <a href="Joseph_Njoku_IT_Support_CV.pdf" id="downloadCV" class="cta-btn cta-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-file-alt"></i>
+        <span data-translate="download_cv">Download Resume (PDF)</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <div class="stat-number" data-target="5">0</div>
+        <div class="stat-label">Featured Projects</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Certificates & Programs</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label">Self-Study Hours</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Active Courses</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="stat-number" data-target="10">0</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="stat-number" data-target="2026">0</div>
+        <div class="stat-label">Scholarship Start</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Availability Section -->
+  <section class="availability-section">
+    <div class="availability-container">
+      <div class="availability-content">
+        <div class="availability-status">
+          <div class="status-indicator" id="statusIndicator">
+            <span class="pulse-dot"></span>
+          </div>
+          <div class="availability-info">
+            <h3 id="availabilityTitle">Actively Seeking Internship</h3>
+            <p id="availabilityMessage">Open to internship opportunities in IT Support and Cybersecurity - Johannesburg, South Africa</p>
+          </div>
+        </div>
+        <div class="availability-details">
+          <div class="detail-item">
+            <i class="fas fa-user-graduate"></i>
+            <span>Internship Positions</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-laptop-code"></i>
+            <span>Remote & On-site</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Johannesburg, SA</span>
+          </div>
+        </div>
+      </div>
+      <div class="availability-toggle">
+        <label class="toggle-label">
+          <input type="checkbox" id="availabilityToggle" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-text">Toggle Availability Status</span>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in slide-up">
+    <h2>From Political Science to IT: An Unconventional Journey</h2>
+    <p class="section-subtitle" style="max-width: 900px; margin: 0 auto 1.2em auto; line-height: 1.7;">
+      Most IT professionals start with a Computer Science degree. I started with political theory books and a curiosity about how systems work—both governmental and technological.
+    </p>
+
+    <div style="max-width: 980px; margin: 0 auto; text-align: left; background: rgba(255,255,255,0.92); border-radius: 14px; padding: 1.4em; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
+      <h3 style="color: #0077cc; margin-top: 0;">The "Aha!" Moment</h3>
+      <p style="line-height: 1.7; color: #333;">My first encounter with computers was in 2005 at a local computer center (cybercafe). As a young learner, I helped customers print documents and compose email messages. In our free time, we practiced typing with Mavis Beacon, which built speed, confidence, and long-term curiosity.</p>
+      <p style="line-height: 1.7; color: #333;">In 2015, I completed a website design course using Adobe Dreamweaver CS6. Those early experiences kept me connected to technology, but I fully committed to an IT and cybersecurity career path in 2024.</p>
+      <p style="line-height: 1.7; color: #333;">That decision shaped my direction: follow the work I am genuinely passionate about and build practical, job-ready skills through consistent execution.</p>
+
+      <h3 style="color: #0077cc; margin-top: 1.2em;">The Self-Taught Path (Focused Since 2024)</h3>
+      <ul style="line-height: 1.8; color: #333; padding-left: 1.2em;">
+        <li><strong>Hundreds of hours</strong> of focused self-study in IT, networking, and cybersecurity</li>
+        <li><strong>Multiple documented projects</strong> spanning web, backend, and cybersecurity tooling</li>
+        <li><strong>Home lab practice</strong> across two personal systems with Linux/Windows virtual machines</li>
+        <li><strong>Hands-on setup work:</strong> self-installed operating systems and configured tools like Nmap, Wireshark, Aircrack-ng, and Sysinternals</li>
+        <li><strong>Early web foundation:</strong> Adobe Dreamweaver CS6 website design course (2015)</li>
+        <li><strong>Google IT Support Professional Certificate</strong> completed via Coursera</li>
+        <li><strong>Additional Coursera domains</strong> currently ongoing through financial-aid access</li>
+        <li><strong>TS Academy Cybersecurity Scholarship Program</strong> (In Progress)</li>
+        <li><strong>CompTIA A+/Security+ objectives</strong> currently being studied (exam planned when financially possible)</li>
+      </ul>
+
+      <h3 style="color: #0077cc; margin-top: 1.2em;">What Political Science Taught Me About IT</h3>
+      <div class="transferable-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1em; margin-top: 0.8em;">
+        <div style="background: #f8fbff; border: 1px solid #e3f2fd; border-radius: 10px; padding: 0.9em;">
+          <h4 style="margin: 0 0 0.5em 0;">🔍 Research & Analysis</h4>
+          <p style="margin: 0; color: #444;">Translates into troubleshooting methodology, log analysis, and root-cause investigation.</p>
+        </div>
+        <div style="background: #f8fbff; border: 1px solid #e3f2fd; border-radius: 10px; padding: 0.9em;">
+          <h4 style="margin: 0 0 0.5em 0;">📝 Documentation</h4>
+          <p style="margin: 0; color: #444;">Translates into incident notes, technical documentation, and reusable SOP-style guides.</p>
+        </div>
+        <div style="background: #f8fbff; border: 1px solid #e3f2fd; border-radius: 10px; padding: 0.9em;">
+          <h4 style="margin: 0 0 0.5em 0;">🧩 Systems Thinking</h4>
+          <p style="margin: 0; color: #444;">Translates into understanding connected infrastructure, security controls, and dependencies.</p>
+        </div>
+        <div style="background: #f8fbff; border: 1px solid #e3f2fd; border-radius: 10px; padding: 0.9em;">
+          <h4 style="margin: 0 0 0.5em 0;">🗣️ Communication</h4>
+          <p style="margin: 0; color: #444;">Translates into user-friendly support and clear communication with non-technical stakeholders.</p>
+        </div>
+      </div>
+
+      <h3 style="color: #0077cc; margin-top: 1.2em;">Show, Don't Tell</h3>
+      <ul style="line-height: 1.8; color: #333; padding-left: 1.2em;">
+        <li>✅ <strong>Projects:</strong> documented, practical implementations across IT and security</li>
+        <li>✅ <strong>GitHub:</strong> code, scripts, and reproducible technical work</li>
+        <li>✅ <strong>Continuous Learning:</strong> consistent daily study and applied practice</li>
+      </ul>
+
+      <h3 style="color: #0077cc; margin-top: 1.2em;">What I'm Looking For</h3>
+      <p style="line-height: 1.7; color: #333;">I am actively seeking entry-level opportunities where I can contribute immediately, learn from experienced teams, and grow into cybersecurity and systems administration pathways.</p>
+      <p style="line-height: 1.7; color: #333;"><strong>Target roles:</strong> Help Desk Technician, IT Support Specialist, Desktop Support, Junior SOC Analyst.</p>
+      <p style="line-height: 1.7; color: #333;"><strong>Open to:</strong> remote internships, entry-level support roles, shifts, weekends, and contract-to-hire pathways.</p>
+    </div>
+
+    <div style="max-width: 980px; margin: 1.2em auto 0 auto; background: #f8fbff; border-left: 4px solid #0077cc; border-radius: 10px; padding: 1em; text-align: left;">
+      <h3 style="margin-top: 0; color: #0077cc;">Learning Journey (Highlights)</h3>
+      <ul style="margin: 0; line-height: 1.8; color: #333; padding-left: 1.2em;">
+        <li><strong>2005:</strong> First computer experience in a cyber cafe helping with printing and email tasks.</li>
+        <li><strong>2015:</strong> Completed Adobe Dreamweaver CS6 website design course.</li>
+        <li><strong>2024:</strong> Decided to pursue IT and cybersecurity with full commitment.</li>
+        <li><strong>December 2025:</strong> Built and shipped cybersecurity and backend portfolio projects.</li>
+        <li><strong>January 31, 2026:</strong> Started TS Academy Cybersecurity Scholarship Program.</li>
+        <li><strong>February 2026:</strong> Continuing Security+ preparation and SOC-focused practical learning.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="section slide-up">
+    <h2>💼 Skills & Expertise</h2>
+    <p class="section-subtitle" style="max-width: 900px; margin: 0 auto 1em auto; line-height: 1.6;"><em>All skills below are supported by documented projects and practical lab-style work. Skill levels are self-assessed and continue to improve through hands-on learning.</em></p>
+    <div style="max-width: 900px; margin: 0 auto 1.5em auto; background: #f8fbff; border-left: 4px solid #0077cc; padding: 0.9em 1em; border-radius: 8px;">
+      <p style="margin: 0 0 0.5em 0; font-weight: 700; color: #005fa3;"><i class="fas fa-book-reader"></i> Now Learning</p>
+      <p style="margin: 0; color: #2d3748;">• SIEM fundamentals • Incident response workflows • Vulnerability assessment basics</p>
+    </div>
+    <div class="skills-container">
+      <div class="skill-category stagger-item" style="--stagger-delay: 0.1s;">
+        <h3>🖥️ IT Support Foundations (Google IT Support Certificate) ✅</h3>
+        <div class="skill-item">
+          <div class="skill-name">Technical Troubleshooting</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="95"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Windows/Linux Basics</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Network Fundamentals</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Customer Service</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="100"></div>
+          </div>
+          <span class="skill-percent">Strong</span>
+        </div>
+      </div>
+
+      <div class="skill-category stagger-item" style="--stagger-delay: 0.2s;">
+        <h3>🔒 Cybersecurity & Security Tools</h3>
+        <div class="skill-item">
+          <div class="skill-name">AES-256 Encryption</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Cryptographic Hashing</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Password Security Analysis</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Threat Detection & Analysis</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="65"></div>
+          </div>
+          <span class="skill-percent">Beginner</span>
+        </div>
+      </div>
+
+      <div class="skill-category stagger-item" style="--stagger-delay: 0.3s;">
+        <h3>💻 Python & Backend Development</h3>
+        <div class="skill-item">
+          <div class="skill-name">Python Programming</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Flask & REST API</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Cryptography Library</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Backend API Design</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">HTML/CSS</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">JavaScript (Learning)</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="50"></div>
+          </div>
+          <span class="skill-percent">Beginner</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Web Development</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="65"></div>
+          </div>
+          <span class="skill-percent">Intermediate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section fade-in slide-left">
+    <h2>🎓 Certifications & Education</h2>
+    <div class="certifications-container">
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Bachelor of Science in Political Science</h3>
+        <p class="cert-issuer">University Degree • Graduated 2014</p>
+        <p class="cert-description">Academic background in political systems, research, analysis, communication, and structured writing.</p>
+        <div class="cert-badge">Degree</div>
+      </div>
+      
+      <div class="cert-card">
+        <div class="cert-icon">💻</div>
+        <h3>Google IT Support Professional Certificate</h3>
+        <p class="cert-issuer">Coursera • Completed</p>
+        <p class="cert-description">Training in troubleshooting, customer service, networking, operating systems, system administration, and security fundamentals. Additional Coursera learning is still in progress.</p>
+        <div class="cert-badge">Professional Certificate</div>
+      </div>
+      
+      <div class="cert-card">
+        <div class="cert-icon">🖥️</div>
+        <h3>Computer Literacy Certificate</h3>
+        <p class="cert-issuer">Educourse</p>
+        <p class="cert-description">Foundational computer skills including Microsoft Office Suite, digital communication, file management, and essential productivity tools.</p>
+        <div class="cert-badge">Certificate</div>
+      </div>
+      
+      <div class="cert-card" style="border: 2px solid #0077cc; background: linear-gradient(135deg, #f5f7fa 0%, #e3f2fd 100%);">
+        <div class="cert-icon">🔒</div>
+        <h3>Cybersecurity Scholarship Program</h3>
+        <p class="cert-issuer">TS Academy • Started January 31, 2026 • In Progress</p>
+        <p class="cert-description">Comprehensive cybersecurity training program covering threat analysis, security operations, penetration testing, and industry best practices.</p>
+        <div class="cert-badge" style="background: #0077cc;">In Progress</div>
+      </div>
+      
+      <div class="cert-card" style="opacity: 0.9;">
+        <div class="cert-icon">📚</div>
+        <h3>Currently Pursuing: CompTIA A+ & Security+</h3>
+        <p class="cert-issuer">Self-Study • In Progress</p>
+        <p class="cert-description">Preparing for industry-standard certifications in IT fundamentals and cybersecurity to strengthen technical expertise and career opportunities.</p>
+        <div class="cert-badge" style="background: #ff9800;">In Progress</div>
+      </div>
+    </div>
+    
+    <div class="learning-platforms" style="margin-top: 3em; text-align: center;">
+      <h3 style="color: #0077cc; margin-bottom: 0.35em;">🌐 Active Learning Platforms (Cybersecurity-First)</h3>
+      <p style="margin: 0 auto 1.2em auto; color: #4a5568; font-size: 0.95em; line-height: 1.5; max-width: 760px;">Hands-on SOC simulations, guided cybersecurity labs, and practical skill-building.</p>
+      <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: min(180px, 100%);">
+          <i class="fas fa-shield-alt" style="font-size: 2em; color: #d32f2f; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">Cybrary</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">Cybersecurity Training</p>
+        </div>
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: min(180px, 100%);">
+          <i class="fas fa-bug" style="font-size: 2em; color: #f97316; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">TryHackMe</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">Guided Labs</p>
+        </div>
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: min(180px, 100%);">
+          <i class="fas fa-user-shield" style="font-size: 2em; color: #0ea5e9; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">LetsDefend</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">SOC Simulations</p>
+        </div>
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: min(180px, 100%);">
+          <i class="fas fa-cube" style="font-size: 2em; color: #4caf50; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">HackTheBox</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">Hands-on Practice</p>
+        </div>
+        <div style="padding: 1em; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: min(180px, 100%);">
+          <i class="fas fa-code" style="font-size: 2em; color: #0077cc; margin-bottom: 0.5em;"></i>
+          <p style="font-weight: 600; margin: 0;">FreeCodeCamp</p>
+          <p style="font-size: 0.9em; color: #666; margin: 0.3em 0 0 0;">HTML, CSS, JS, Python</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section id="search" class="section search-section">
+    <div class="search-container">
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search projects and lab notes...">
+        <button id="clearSearch" class="clear-search" style="display: none;">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="search-results-info" id="searchResultsInfo" style="display: none;"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in scale-up">
+    <h2>📁 Projects</h2>
+    <div class="projects-container">
+      <!-- Featured Python Projects -->
+      <div class="project-card" style="border: 3px solid #764ba2; background: linear-gradient(135deg, #f5f7fa 0%, #e8eaf6 100%);">
+        <div class="project-header">
+          <h3>🛡️ Cybersecurity Toolkit</h3>
+          <span class="tag" style="background: #764ba2; color: white; margin-left: 10px;">Featured</span>
+        </div>
+        <p class="project-description">Python-based security toolkit with AES-256 file encryption/decryption, multi-algorithm hash calculation (MD5, SHA1, SHA256, SHA512), and password strength checks. Built as a practical learning and portfolio project.</p>
+        <p class="project-description" style="margin-top: -0.2em;"><strong>Outcome:</strong> Combined AES-256 encryption and 4 hash algorithms into one practical toolkit for faster, repeatable security checks.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Cryptography</span>
+          <span class="tag">AES-256</span>
+          <span class="tag">Security</span>
+          <span class="tag">Hashing</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/cybersecurity-toolkit" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+          <a href="https://github.com/Chima042-hub/cybersecurity-toolkit/archive/refs/heads/main.zip" class="btn-live">
+            <i class="fas fa-download"></i> Download
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" style="border: 3px solid #667eea; background: linear-gradient(135deg, #f5f7fa 0%, #e3f2fd 100%);">
+        <div class="project-header">
+          <h3>🚀 Portfolio Backend API</h3>
+          <span class="tag" style="background: #667eea; color: white; margin-left: 10px;">Featured</span>
+        </div>
+        <p class="project-description">RESTful API built with Flask serving 7 endpoints for contact forms, visitor analytics, and project showcase. Features CORS support, JSON data storage, comprehensive error handling, and professional API architecture.</p>
+        <p class="project-description" style="margin-top: -0.2em;"><strong>Outcome:</strong> Delivered 7 functional endpoints with structured error handling for reliable form and analytics workflows.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Backend</span>
+          <span class="tag">JSON</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub" target="_blank" class="btn-github" title="Portfolio backend repository upload is in progress">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+          <a href="PROJECT_README.md" target="_blank" class="btn-live">
+            <i class="fas fa-book"></i> Documentation
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" style="border: 2px solid #0077cc;">
+        <div class="project-header">
+          <h3>🧰 Windows Help Desk User Management Lab</h3>
+        </div>
+        <p class="project-description">Hands-on Windows command-line project for Help Desk workflow practice: created a log folder, reset a local user password, controlled account status with <code>/active:yes</code> and <code>/active:no</code>, logged actions with date/time, and checked account details.</p>
+        <p class="project-description" style="margin-top: -0.2em;"><strong>Outcome:</strong> Built a repeatable support process using <code>net user</code>, timestamped logging, and verification checks including <code>whoami</code> for clear accountability.</p>
+        <a href="images/projects/windows-helpdesk-user-management-lab.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Windows Help Desk screenshot">
+          <img src="images/projects/windows-helpdesk-user-management-lab.png" alt="Windows Help Desk User Management Lab screenshot" class="project-preview" loading="lazy">
+        </a>
+        <div class="project-tags">
+          <span class="tag">Windows CMD</span>
+          <span class="tag">Help Desk</span>
+          <span class="tag">User Management</span>
+          <span class="tag">Logging</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub" target="_blank" class="btn-github" title="Repository link will be added after upload">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+          <a href="WINDOWS_HELPDESK_USER_MANAGEMENT_LAB.md" target="_blank" class="btn-live">
+            <i class="fas fa-book"></i> Case Study
+          </a>
+          <a href="images/projects/windows-helpdesk-user-management-lab.png" target="_blank" class="btn-live">
+            <i class="fas fa-image"></i> Screenshot
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" style="border: 2px solid #0077cc;">
+        <div class="project-header">
+          <h3>🔐 Security Training Platform</h3>
+        </div>
+        <p class="project-description">Interactive cybersecurity learning project demonstrating password security, attack-detection basics, and encryption concepts. Includes a brute-force simulation and a log-analysis module.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Security</span>
+          <span class="tag">Education</span>
+          <span class="tag">Regex</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/security-training-platform" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+          <a href="https://github.com/Chima042-hub/security-training-platform/archive/refs/heads/main.zip" class="btn-live">
+            <i class="fas fa-download"></i> Download
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" style="border: 2px solid #0077cc;">
+        <div class="project-header">
+          <h3>📦 Parcel Force Tracking System</h3>
+        </div>
+        <p class="project-description">A parcel-tracking web project with status display, tracking-number search, and responsive design. Built to demonstrate practical front-end web skills for logistics-style use cases.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Tracking UI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Parcel-Force/parcelforce-site" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://parcel-force.github.io/parcelforce-site/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3>🏦 NovaBank Online Banking System</h3>
+        </div>
+        <p class="project-description">Portfolio banking-interface project with account views, transaction layout, and user dashboard screens. Built to practice web design and front-end development for finance-themed applications.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Finance</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/novabanking-site" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="https://chima042-hub.github.io/novabanking-site/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3>🐱 Cat Photo App</h3>
+        </div>
+        <p class="project-description">An interactive web application showcasing adorable cat photos with a user-friendly interface. Built as part of FreeCodeCamp curriculum to practice HTML and CSS fundamentals.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">FreeCodeCamp</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/cat-photo-app" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="https://chima042-hub.github.io/cat-photo-app/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>📋 Survey Form</h3>
+        </div>
+        <p class="project-description">A comprehensive survey form with validation, multiple input types, and responsive design. FreeCodeCamp project demonstrating form handling best practices and user experience.</p>
+        <div class="project-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Forms</span>
+          <span class="tag">Validation</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/survey-form" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://chima042-hub.github.io/survey-form/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>✈️ Travel Page</h3>
+        </div>
+        <p class="project-description">A visually appealing travel landing page featuring imagery, smooth animations, and modern web design techniques. Practice project for front-end development skills.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Responsive</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/travel-page" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="https://chima042-hub.github.io/travel-page/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>💰 Finance Loan Website</h3>
+        </div>
+        <p class="project-description">Professional finance website for loan services with clean design and clear call-to-actions. Learning project demonstrating business web development capabilities.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Business</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Chima042-hub/loan-website" target="_blank" class="btn-github">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="https://chima042-hub.github.io/loan-website/" target="_blank" class="btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section fade-in slide-right">
+    <h2>📝 Lab Notes</h2>
+    <p class="section-subtitle">Practical notes from my home lab and hands-on IT support learning</p>
+    <div class="blog-container">
+      <article class="blog-card stagger-item" style="--stagger-delay: 0.1s;">
+        <div class="blog-header">
+          <div class="blog-category">IT Support</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Mar 2026</div>
+        </div>
+        <h3>How I Troubleshoot Windows Network Issues in My Home Lab</h3>
+        <p class="blog-excerpt">Issue: no internet access inside a Windows VM. I checked IP settings, gateway, DNS, and adapter mode, then validated with ping and tracert. Fix: corrected virtual adapter settings and renewed IP. Lesson: always verify Layer 1-3 basics before advanced troubleshooting.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Windows</span>
+            <span class="blog-tag">Networking</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" title="Published lab note">
+          <i class="fas fa-check-circle" style="margin-right: 0.5em;"></i>Published
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-header">
+          <div class="blog-category tips">Help Desk</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Mar 2026</div>
+        </div>
+        <h3>My Remote Support Checklist for Faster Ticket Resolution</h3>
+        <p class="blog-excerpt">Before solving a ticket, I confirm user impact, gather screenshots, check recent changes, and document error messages. During troubleshooting, I test one change at a time and confirm results with the user. This keeps support clear, calm, and faster.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Remote Support</span>
+            <span class="blog-tag">Troubleshooting</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" title="Published lab note">
+          <i class="fas fa-check-circle" style="margin-right: 0.5em;"></i>Published
+        </a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-header">
+          <div class="blog-category tech">Virtualization</div>
+          <div class="blog-date"><i class="far fa-calendar"></i> Feb 2026</div>
+        </div>
+        <h3>What I Learned from Running Linux and Windows VMs</h3>
+        <p class="blog-excerpt">Using Linux and Windows VMs helped me practice safe testing, snapshots, and rollback after mistakes. I learned how network modes affect connectivity and why documenting each change improves troubleshooting speed.</p>
+        <div class="blog-meta">
+          <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+          <div class="blog-tags">
+            <span class="blog-tag">Linux</span>
+            <span class="blog-tag">Windows VM</span>
+          </div>
+        </div>
+        <a href="#blog" class="blog-link" title="Published lab note">
+          <i class="fas fa-check-circle" style="margin-right: 0.5em;"></i>Published
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section id="resume" class="section resume fade-in slide-up">
+    <h2>📄 Resume</h2>
+    <p class="resume-subtitle">Download my CV and explore my IT and cybersecurity journey, including TS Academy (In Progress)</p>
+    
+    <div class="resume-container">
+      <div class="resume-card">
+        <div class="resume-icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <h3>Joseph Chimakpa Njoku</h3>
+        <p class="resume-title">Entry-Level IT Support Candidate | Cybersecurity Learner | Google IT Support Certificate</p>
+        <p class="resume-description">
+          Comprehensive CV showcasing my educational background, certifications, technical skills, 
+          and ongoing learning journey in IT support and cybersecurity. Based in Johannesburg, South Africa.
+        </p>
+        
+        <div class="resume-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>BSc + Verified Certificates</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Johannesburg, SA</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-user-graduate"></i>
+            <span>Seeking Internship</span>
+          </div>
+        </div>
+        
+        <div class="resume-actions">
+          <a href="Joseph_Njoku_IT_Support_CV.pdf" target="_blank" class="btn-download-primary" download>
+            <i class="fas fa-download"></i>
+            Download Resume (PDF)
+          </a>
+          <a href="Joseph_Njoku_IT_Support_CV.pdf" target="_blank" class="btn-download-secondary">
+            <i class="fas fa-eye"></i>
+            View Online
+          </a>
+        </div>
+        
+        <div class="resume-meta">
+          <span><i class="fas fa-clock"></i> Last Updated: March 2026</span>
+          <span><i class="fas fa-file-pdf"></i> PDF Format</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section fade-in slide-left">
+    <h2>💬 Peer Feedback</h2>
+    <p class="section-subtitle">Informal feedback from study groups and project collaborators</p>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p style="margin: 0 0 0.8em 0; color: #667eea; font-weight: 600;">Informal peer comment</p>
+        <p class="testimonial-text">"Joseph is a dedicated learner who shows great enthusiasm for cybersecurity. His commitment to completing the Google IT Support Certificate and actively engaging with platforms like Cybrary and HackTheBox demonstrates his drive to excel in the field."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="author-info">
+            <h4>Study Group Peer</h4>
+            <p>FreeCodeCamp Community</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p style="margin: 0 0 0.8em 0; color: #667eea; font-weight: 600;">Informal peer comment</p>
+        <p class="testimonial-text">"Joseph consistently demonstrates strong problem-solving abilities and attention to detail. His work on the Parcel Force tracking system shows practical application of web development skills and a real-world approach to projects."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="author-info">
+            <h4>Project Collaborator</h4>
+            <p>Web Development</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p style="margin: 0 0 0.8em 0; color: #667eea; font-weight: 600;">Informal peer comment</p>
+        <p class="testimonial-text">"As someone transitioning into cybersecurity, Joseph shows remarkable dedication to continuous learning. His proactive approach to gaining hands-on experience through multiple platforms is commendable and will serve him well in his career."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="author-info">
+            <h4>Learning Community Peer</h4>
+            <p>Cybersecurity Study Community</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial-note" style="text-align: center; margin-top: 2em; padding: 1.5em; background: #e3f2fd; border-radius: 10px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <i class="fas fa-info-circle" style="color: #0077cc; margin-right: 0.5em;"></i>
+      <span style="color: #555;">These are informal peer comments from learning communities. As I gain professional experience, I will add verified employer references.</span>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section faq-section fade-in">
+    <h2>❓ Frequently Asked Questions</h2>
+    <p class="faq-subtitle">Got questions? Here are answers about my current level, goals, and availability for entry-level roles.</p>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-briefcase"></i></span>
+          <span class="faq-text">What kind of role are you currently seeking?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I am currently seeking remote internship or entry-level Help Desk / IT Support roles where I can apply troubleshooting skills, customer support, documentation, and grow in a real production environment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-code"></i></span>
+          <span class="faq-text">What programming languages and technologies do you work with?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I use Python for scripts and learning projects, plus HTML/CSS/JavaScript for portfolio web projects. In my home lab, I work with Windows, Linux, virtualization, and tools such as Nmap, Wireshark, Aircrack-ng, and Sysinternals as part of ongoing learning.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-clock"></i></span>
+          <span class="faq-text">How quickly do you respond to recruiters?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I usually respond within 24 hours and often sooner. I keep communication clear and consistent throughout application and interview processes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-dollar-sign"></i></span>
+          <span class="faq-text">Are you open to internships or junior-level pay?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. My priority is gaining real-world experience and building a strong IT foundation. I am open to internship opportunities and entry-level support roles, including modest starting pay.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-globe"></i></span>
+          <span class="faq-text">Do you work remotely or on-site?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I am open to remote roles and on-site opportunities where practical. I am based in Johannesburg, South Africa, and available for remote shifts aligned with international teams.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-shield-alt"></i></span>
+          <span class="faq-text">How do you ensure data security and confidentiality?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I follow security basics in my lab and project work, such as careful access handling, safe file practices, and responsible data use. I am still building experience and continue learning practical security standards through TS Academy and hands-on practice.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-certificate"></i></span>
+          <span class="faq-text">What certifications and qualifications do you have?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I hold a BSc in Political Science (2014), a Google IT Support Professional Certificate (Coursera), and a Computer Literacy Certificate (Educourse). I started the TS Academy Cybersecurity Scholarship Program on January 31, 2026 and I am currently studying CompTIA A+/Security+ objectives.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-users"></i></span>
+          <span class="faq-text">Can you work with teams or do you only work individually?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I can work independently and collaboratively. Most of my teamwork experience is from learning communities and project collaboration, and I am ready to grow that experience in a professional support team.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-project-diagram"></i></span>
+          <span class="faq-text">What practical experience do you have so far?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I have built portfolio projects in web development, Python scripting, and cybersecurity learning tools. I also maintain a personal home lab with Windows/Linux systems and virtual machines to practice troubleshooting and security workflows.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon"><i class="fas fa-question-circle"></i></span>
+          <span class="faq-text">How can I contact you for internship or help desk opportunities?</span>
+          <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Please reach out through the contact form, email, or LinkedIn. I am actively applying for remote internships and entry-level IT support roles and would be glad to discuss fit and availability.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-cta">
+      <p><i class="fas fa-lightbulb"></i> Still have questions?</p>
+      <a href="#contact" class="faq-contact-btn">Contact Me Directly</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in scale-up">
+    <h2>📬 Contact Me</h2>
+    <form class="contact-form" action="https://formspree.io/f/xldwaqpl" method="POST" novalidate>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2" maxlength="50">
+        <span class="error-message" id="nameError"></span>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+        <span class="error-message" id="emailError"></span>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your internship opportunity or project..." rows="5" required minlength="10" maxlength="1000"></textarea>
+        <span class="error-message" id="messageError"></span>
+        <span class="char-count"><span id="charCount">0</span>/1000</span>
+      </div>
+      
+      <button type="submit" class="submit-btn">
+        <span class="btn-text">Send Message</span>
+        <span class="btn-loading" style="display:none;">
+          <i class="fas fa-spinner fa-spin"></i> Sending...
+        </span>
+      </button>
+      
+      <div id="formMessage" class="form-feedback" style="display:none;"></div>
+    </form>
+    
+    <div class="contact-info">
+      <div class="contact-detail">
+        <i class="fas fa-envelope"></i>
+        <span>jennynjoku148@gmail.com</span>
+      </div>
+      <div class="contact-detail">
+        <i class="fas fa-phone"></i>
+        <span>+27 74 573 9227</span>
+      </div>
+      <div class="contact-detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Johannesburg, South Africa</span>
+      </div>
+    </div>
+    
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/chima-njoku-869690319/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/Chima042-hub" target="_blank" class="social-icon github" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:jennynjoku148@gmail.com" class="social-icon email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <div class="footer-branding">
+      <div class="footer-logo">
+        <svg viewBox="0 0 100 100" class="footer-logo-svg">
+          <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" class="logo-circle"/>
+          <text x="50" y="62" text-anchor="middle" class="logo-text">JCN</text>
+        </svg>
+      </div>
+      <p class="footer-text">© <span id="year"></span> Joseph Chimakpa Njoku. All rights reserved.</p>
+      <p class="footer-text">Last Updated: March 2026</p>
+      <p class="footer-tagline">Entry-Level IT Support & Cybersecurity Learner | Seeking Internship Opportunities | Johannesburg, SA</p>
+    </div>
+  </section>
+
+  <button id="scrollTopBtn" aria-label="Back to top">
+    <svg class="progress-ring" width="54" height="54">
+      <circle class="progress-ring-bg" cx="27" cy="27" r="24"></circle>
+      <circle class="progress-ring-circle" cx="27" cy="27" r="24"></circle>
+    </svg>
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
+
