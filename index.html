@@ -172,6 +172,9 @@
       <span class="cursor"></span>
     </p>
     <p class="role-fit-line role-fit-line-hero"><strong>Role Fit:</strong> Primary: Junior SOC Analyst. Secondary: IT Support-to-SOC pathway.</p>
+    <p class="current-focus" style="margin: 0.4em 0 0.8em 0; color: #2f4f74; font-size: 0.9em;">
+      Trust Note: This portfolio never asks for passwords, card details, or software installs.
+    </p>
     <p class="current-focus current-focus-hero">
       <i class="fas fa-shield-alt"></i> Current Focus: TS Academy Cybersecurity Scholarship Program (4–5 months) • Started January 31, 2026 • Expected completion: May–June 2026
     </p>
@@ -238,7 +241,7 @@
         <span class="ats-chip">SIEM</span>
         <span class="ats-chip">Log Analysis</span>
         <span class="ats-chip">Incident Response</span>
-        <span class="ats-chip">Phishing Triage</span>
+        <span class="ats-chip">Email Threat Triage</span>
         <span class="ats-chip">Endpoint Investigation</span>
         <span class="ats-chip">Wireshark</span>
         <span class="ats-chip">Nmap</span>
@@ -688,7 +691,7 @@
     <div style="max-width: 980px; margin: 0 auto 1em auto; display: flex; flex-wrap: wrap; gap: 0.55em; align-items: center; justify-content: flex-start;">
       <span style="font-size: 0.85em; font-weight: 700; color: #334e68; text-transform: uppercase; letter-spacing: 0.04em;">Proof of Work:</span>
       <a href="#soc-case-powershell" style="background: #eef6ff; color: #1e40af; border: 1px solid #bfdbfe; border-radius: 999px; padding: 0.3em 0.8em; font-size: 0.85em; font-weight: 600; text-decoration: none;">SOC case study (PowerShell triage)</a>
-      <a href="#soc-case-phishing" style="background: #eef6ff; color: #1e40af; border: 1px solid #bfdbfe; border-radius: 999px; padding: 0.3em 0.8em; font-size: 0.85em; font-weight: 600; text-decoration: none;">Phishing analysis (IOC workflow)</a>
+      <a href="#soc-case-email-threat" style="background: #eef6ff; color: #1e40af; border: 1px solid #bfdbfe; border-radius: 999px; padding: 0.3em 0.8em; font-size: 0.85em; font-weight: 600; text-decoration: none;">Email threat analysis (IOC workflow)</a>
       <a href="WINDOWS_HELPDESK_USER_MANAGEMENT_LAB.md" target="_blank" rel="noopener noreferrer" style="background: #eef6ff; color: #1e40af; border: 1px solid #bfdbfe; border-radius: 999px; padding: 0.3em 0.8em; font-size: 0.85em; font-weight: 600; text-decoration: none;">Windows workflow artifact</a>
     </div>
     <div class="blog-container">
@@ -705,16 +708,16 @@
         <p class="blog-excerpt"><strong>Lessons learned:</strong> Parent-child process context and user activity timeline are critical for distinguishing admin scripts from malicious behavior.</p>
       </article>
 
-      <article id="soc-case-phishing" class="blog-card stagger-item" style="--stagger-delay: 0.2s;">
+      <article id="soc-case-email-threat" class="blog-card stagger-item" style="--stagger-delay: 0.2s;">
         <div class="blog-header">
-          <div class="blog-category">Phishing Analysis</div>
+          <div class="blog-category">Email Threat Analysis</div>
           <div class="blog-date"><i class="far fa-calendar"></i> Apr 2026</div>
         </div>
-        <h3>Credential Harvesting Email with Lookalike Domain</h3>
-        <p class="blog-excerpt"><strong>Incident observed:</strong> Multiple users reported a password-reset email that looked legitimate but arrived from a non-corporate sender.</p>
+        <h3>Suspicious Email Campaign with Lookalike Domain (Lab Scenario)</h3>
+        <p class="blog-excerpt"><strong>Scenario:</strong> In a lab dataset, multiple users reported an account-notification email that looked legitimate but arrived from a non-corporate sender.</p>
         <p class="blog-excerpt"><strong>Indicators:</strong> Domain typo-squatting, urgent language, shortened link, and mismatch between display name and sender address.</p>
         <p class="blog-excerpt"><strong>Investigation steps:</strong> Parsed email headers, expanded and sandbox-checked URL, compared domain age and WHOIS data, searched mailbox logs for similar messages.</p>
-        <p class="blog-excerpt"><strong>Decision:</strong> Classified as phishing campaign, blocked sender/domain, reported IOCs to detection lists, and issued user advisory with reporting guidance.</p>
+        <p class="blog-excerpt"><strong>Decision:</strong> Classified as malicious email activity in the simulation, blocked sender/domain, reported IOCs to detection lists, and issued user advisory with reporting guidance.</p>
         <p class="blog-excerpt"><strong>Lessons learned:</strong> Fast user reporting plus clear IOC documentation improves containment speed and reduces click-through risk.</p>
       </article>
     </div>
@@ -725,10 +728,10 @@
       <h3 style="margin: 0 0 0.5em 0; color: #005fa3; font-size: 1.12em;"><i class="fas fa-briefcase" style="margin-right: 0.4em;"></i>Interview-Ready Labs</h3>
       <ul style="margin: 0; padding-left: 1.2em; line-height: 1.7; color: #243b53;">
         <li><strong>PowerShell triage:</strong> Investigated suspicious command-line execution patterns, validated process lineage, and documented escalation-ready findings.</li>
-        <li><strong>Phishing IOC analysis:</strong> Extracted and verified sender, URL, and domain indicators to classify malicious emails and support rapid containment actions.</li>
+        <li><strong>Email IOC analysis:</strong> Extracted and verified sender, URL, and domain indicators to classify malicious emails and support rapid containment actions.</li>
         <li><strong>Windows account/security workflow:</strong> Practiced user access checks, account updates, and security-control verification to reduce support risk and improve audit readiness.</li>
       </ul>
-      <p style="margin: 0.75em 0 0 0; color: #334e68; font-size: 0.94em;"><strong>Interview fit:</strong> These labs directly map to common SOC interview questions on triage, phishing handling, and Windows security operations.</p>
+      <p style="margin: 0.75em 0 0 0; color: #334e68; font-size: 0.94em;"><strong>Interview fit:</strong> These labs directly map to common SOC interview questions on triage, email threat handling, and Windows security operations.</p>
     </div>
   </section>
 
