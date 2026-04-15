@@ -51,7 +51,7 @@ Quick maintenance map for where content, styling, and behavior live in the portf
   - `@media (max-width: 320px)`
 
 ## Key Assets
-- `Joseph_Njoku_IT_Support_CV.pdf` — Resume file used by hero and resume section CTAs
+- `Joseph_Njoku_SOC_Analyst_Resume.pdf` — Resume file used by hero and resume section CTAs
 - `profile.jpg` — Main hero/profile image
 
 ## Project/Backend Files
@@ -69,4 +69,4 @@ Quick maintenance map for where content, styling, and behavior live in the portf
 - Edit portfolio copy/links/cards: `index.html`
 - Change layout/spacing/responsive behavior: `style.css`
 - Change interactions/logic/translations: `script.js`
-- Update resume asset: `Joseph_Njoku_IT_Support_CV.pdf`
+- Update resume asset: `Joseph_Njoku_SOC_Analyst_Resume.pdf`

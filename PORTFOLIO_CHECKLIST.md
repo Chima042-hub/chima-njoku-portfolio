@@ -15,7 +15,7 @@
 - Lab Notes has real entries instead of placeholder cards.
 
 ### Files & Assets
-- Resume asset present: `Joseph_Njoku_IT_Support_CV.pdf`.
+- Resume asset present: `Joseph_Njoku_SOC_Analyst_Resume.pdf`.
 - Profile image present: `profile.jpg`.
 - Contact form configured with Formspree.
 

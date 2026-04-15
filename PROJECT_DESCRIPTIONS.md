@@ -25,7 +25,7 @@ A comprehensive cybersecurity toolkit demonstrating real-world security applicat
 - **Activity Logging**: Track all security operations with timestamps
 - **File Integrity**: Verify file authenticity using hash comparison
 
-Technologies: Python 3.14, Cryptography (Fernet), Hashlib, JSON, Object-Oriented Programming
+Technologies: Python 3.x, Cryptography (Fernet), Hashlib, JSON, Object-Oriented Programming
 
 ---
 
@@ -51,7 +51,7 @@ A professional Flask-based REST API powering portfolio website functionality. Th
 - **CORS Support**: Enable cross-origin requests for frontend integration
 - **Error Handling**: Comprehensive error management with proper HTTP status codes
 
-Technologies: Flask 3.0, Flask-CORS, Python 3.14, JSON, REST API Design
+Technologies: Flask 3.x, Flask-CORS, Python 3.x, JSON, REST API Design
 
 ---
 
@@ -107,15 +107,15 @@ Technologies: Windows CMD, User Account Administration, Support Logging, Home-La
 
 ## LINKEDIN "ABOUT" SECTION
 
-Entry-level IT Support candidate and cybersecurity learner based in Johannesburg, South Africa.
+Cybersecurity professional-in-training focused on SOC operations and Security Engineering based in Johannesburg, South Africa.
 
 I hold a Google IT Support Professional Certificate (Coursera), a Computer Literacy Certificate (Educourse), and I am currently in the TS Academy Cybersecurity Scholarship Program (started January 31, 2026). I am also studying CompTIA A+ and Security+ objectives (exams not yet completed).
 
-My practical experience comes from hands-on home-lab work and portfolio projects. I have installed and configured Windows and Linux systems, used virtual machines for testing, and practiced troubleshooting workflows with tools such as Wireshark, Nmap, Aircrack-ng, and Sysinternals.
+My practical experience comes from hands-on home-lab work and security-focused portfolio projects. I have configured Windows and Linux systems for security testing, used virtual machines for lab work, and practiced SOC fundamentals with tools such as Wireshark, Nmap, Aircrack-ng, and Sysinternals.
 
-I have also built learning-focused Python projects, including a cybersecurity toolkit and a Flask portfolio API, to improve my scripting, documentation, and problem-solving skills.
+I have built Python security projects including a Cybersecurity Toolkit (AES-256 encryption, password analysis, multi-algorithm hashing) and a Security Training Platform demonstrating threat detection and attack analysis.
 
-I am currently seeking remote internship or entry-level Help Desk / IT Support opportunities where I can contribute, learn from experienced teams, and build toward a long-term SOC analyst path.
+I am currently seeking junior SOC analyst, security operations, or security engineering internship opportunities where I can contribute my growing skillset, learn from experienced security teams, and build my path toward Security Engineer roles.
 
 ---
 
@@ -138,18 +138,19 @@ I am currently seeking remote internship or entry-level Help Desk / IT Support o
 
 ---
 
-## BULLET POINTS FOR HELP DESK COVER LETTERS
+## BULLET POINTS FOR SOC/SECURITY ANALYST COVER LETTERS
 
-When applying for Help Desk or IT Support roles, use these practical and honest bullet points:
+When applying for SOC Analyst, Security Operations, or junior security roles, use these practical and security-focused bullet points:
 
-- Google IT Support Professional Certificate holder with hands-on troubleshooting practice
-- Currently in TS Academy Cybersecurity Scholarship Program (in progress)
-- Built and maintained a personal home lab using Windows/Linux systems and virtual machines
-- Installed and configured operating systems independently, including Windows and Linux environments
-- Practiced support workflows: issue isolation, step-by-step troubleshooting, and clear documentation
-- Comfortable with core tools used in learning labs, including Wireshark, Nmap, and Sysinternals
-- Strong communication background from a Political Science degree, useful for user support and ticket updates
-- Open to remote internship and entry-level Help Desk opportunities, including shift and weekend support
+- Google IT Support Professional Certificate holder with strong foundational IT knowledge
+- Currently advancing through TS Academy Cybersecurity Scholarship Program (in progress)
+- Built and maintained a personal home lab with security-focused configurations
+- Hands-on experience with security tools: Wireshark, Nmap, Aircrack-ng, Sysinternals
+- Developed Python security automation tools: AES-256 encryption, password analysis, multi-algorithm hashing
+- Strong understanding of cryptography, encryption algorithms, and threat detection concepts
+- Experience with log analysis and attack simulation through educational projects
+- Open to SOC analyst internship and junior security operations roles, including on-call and shift support
+- Studying CompTIA A+ and Security+ objectives to strengthen technical credentials
 
 ---
 
@@ -161,12 +162,12 @@ When applying for Help Desk or IT Support roles, use these practical and honest 
 
 **"What technologies are you familiar with?":**
 
-"I'm proficient in Python and have hands-on experience with Flask for building REST APIs. I've implemented backend systems with features like contact form processing, visitor analytics, and project showcase endpoints. I'm also familiar with security concepts - I've worked with encryption algorithms like AES-256, cryptographic hashing using SHA-256 and MD5, and data validation. I understand REST API architecture, JSON data handling, and CORS configuration for frontend-backend communication."
+"I'm proficient in Python with a focus on security scripting: cryptography libraries, encryption algorithms like AES-256, hashing functions (MD5, SHA-256, SHA-512), and automation. I work with security tools including Wireshark for packet analysis, Nmap for network reconnaissance, Sysinternals for Windows troubleshooting, and Aircrack-ng for wireless security learning. I have hands-on experience with SIEM fundamentals, log analysis, and threat detection concepts through both formal coursework and practical lab work."
 
-**"What interests you about cybersecurity?":**
+**"What interests you about cybersecurity and SOC operations?":**
 
-"I'm fascinated by how cryptography protects our digital lives. While building my security toolkit, I learned how encryption algorithms like AES-256 work, why hashing is irreversible, and how websites actually store passwords securely. I implemented these concepts from scratch, which gave me deep understanding of security principles. I'm particularly interested in how simple Python code can create powerful security tools that protect sensitive information."
+"I'm deeply committed to becoming a skilled SOC analyst and eventually a Security Engineer. What fascinates me is how organizations detect and respond to threats in real time. While building my Cybersecurity Toolkit, I gained practical understanding of encryption, hashing, and password security - the building blocks of threat detection. I'm currently learning SIEM fundamentals, log analysis techniques, and incident response workflows. I see SOC analyst work as a critical first step in building expertise that leads toward Security Engineering and deeper technical security leadership roles."
 
 ---
 
-Use these descriptions to update your resume, LinkedIn profile, portfolio website, and job applications! 🎯
+Use these descriptions to update your LinkedIn profile, SOC/Security cover letters, and security-focused job applications! 🛡️
