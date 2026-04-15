@@ -36,16 +36,25 @@ window.addEventListener('scroll', () => {
     logo.style.transform = `rotate(${rotation}deg)`;
   }
   
-  // Add shadow to navbar when scrolled
-  if (scrolled > 50) {
-    navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-  } else {
-    navbar.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)';
+  // Intensify navbar glass treatment after a short scroll threshold.
+  if (navbar) {
+    navbar.classList.toggle('scrolled', scrolled > 50);
   }
 });
 
 // Dynamic year
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Recruiter snapshot freshness signal
+const recruiterSnapshotUpdated = document.getElementById("recruiterSnapshotUpdated");
+if (recruiterSnapshotUpdated) {
+  const now = new Date();
+  recruiterSnapshotUpdated.textContent = now.toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit"
+  });
+}
 
 // Download CV functionality
 const downloadCVBtn = document.getElementById("downloadCV");
@@ -55,10 +64,10 @@ if (downloadCVBtn) {
     
     // Download local PDF resume
     const link = document.createElement('a');
-    link.href = 'Joseph_Njoku_IT_Support_CV.pdf';
+    link.href = 'Joseph_Njoku_SOC_Analyst_Resume_Variant.pdf';
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
-    link.download = 'Joseph_Njoku_IT_Support_CV.pdf';
+    link.download = 'Joseph_Njoku_SOC_Analyst_Resume_Variant.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -435,7 +444,7 @@ window.addEventListener("resize", () => {
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-link");
 
-window.addEventListener("scroll", () => {
+function updateActiveNavLink() {
   let current = "";
   const scrollPosition = window.scrollY + 100;
   
@@ -454,7 +463,28 @@ window.addEventListener("scroll", () => {
       link.classList.add("active");
     }
   });
-});
+}
+
+window.addEventListener("scroll", updateActiveNavLink, { passive: true });
+window.addEventListener("load", updateActiveNavLink);
+
+function runNavRevealAnimation() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  navLinks.forEach((link, index) => {
+    link.style.setProperty('--nav-index', index);
+  });
+
+  requestAnimationFrame(() => {
+    navLinks.forEach(link => link.classList.add('nav-reveal'));
+  });
+}
+
+window.addEventListener('load', () => {
+  setTimeout(runNavRevealAnimation, 120);
+}, { once: true });
 
 // Animate skill bars when they come into view
 const skillBars = document.querySelectorAll('.skill-progress');
@@ -478,12 +508,12 @@ const dynamicText = document.querySelector('.dynamic-text');
 
 // Initialize with English texts (will be updated by language switcher)
 window.typingTexts = [
-  'Entry-Level IT Support Candidate',
+  'Junior SOC Analyst Candidate',
   'TS Academy Cybersecurity Student',
-  'Google IT Support Certificate Holder',
-  'FreeCodeCamp Student',
-  'Python Learner',
-  'Problem Solver'
+  'TryHackMe Top 9% — 69 Rooms',
+  'Security Operations Pathway',
+  'Python Security Scripter',
+  'Blue Team Learner'
 ];
 
 let textIndex = 0;
@@ -872,12 +902,12 @@ const translations = {
     unavailable_work: "Currently Unavailable",
     im_a: "I'm a ",
     typing_texts: [
-      "Entry-Level IT Support Candidate",
+      "Junior SOC Analyst Candidate",
       "TS Academy Cybersecurity Student",
-      "Cybersecurity Enthusiast",
-      "Python Developer",
-      "Problem Solver",
-      "Tech Enthusiast"
+      "TryHackMe Top 9% — 69 Rooms",
+      "Security Operations Pathway",
+      "Python Security Scripter",
+      "Blue Team Learner"
     ]
   },
   es: {
