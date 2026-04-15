@@ -9,10 +9,26 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)  # Allow requests from your portfolio website
+
+# Restrict CORS to known frontend origins by default.
+ALLOWED_ORIGINS = os.getenv(
+    'PORTFOLIO_ALLOWED_ORIGINS',
+    'https://chima042-hub.github.io,http://localhost:5500,http://127.0.0.1:5500'
+).split(',')
+CORS(app, resources={r"/api/*": {"origins": [origin.strip() for origin in ALLOWED_ORIGINS]}})
 
 # ===== DATA STORAGE =====
 DATA_FILE = 'portfolio_data.json'
+
+
+def is_admin_authorized(req):
+    """Simple header token check for admin routes."""
+    admin_token = os.getenv('PORTFOLIO_ADMIN_TOKEN', '').strip()
+    if not admin_token:
+        return False
+
+    provided = req.headers.get('X-Admin-Token', '').strip()
+    return provided == admin_token
 
 def load_data():
     """Load data from JSON file"""
@@ -57,7 +73,7 @@ def get_projects():
             'title': 'Cybersecurity Toolkit',
             'description': 'Python-based security tools including password strength checker, hash generator, and attack detection system.',
             'technologies': ['Python', 'Cryptography', 'Security'],
-            'github': 'https://github.com/yourusername/cybersecurity-toolkit',
+            'github': 'https://github.com/Chima042-hub/cybersecurity-toolkit',
             'demo': None,
             'date': '2025-12-26'
         },
@@ -66,8 +82,8 @@ def get_projects():
             'title': 'Portfolio Backend API',
             'description': 'RESTful API built with Flask to power my portfolio website with contact forms and visitor analytics.',
             'technologies': ['Python', 'Flask', 'REST API', 'JSON'],
-            'github': 'https://github.com/yourusername/portfolio-backend',
-            'demo': 'https://your-api.herokuapp.com',
+            'github': 'https://github.com/Chima042-hub/chima-njoku-portfolio',
+            'demo': None,
             'date': '2025-12-26'
         },
         {
@@ -75,8 +91,8 @@ def get_projects():
             'title': 'Interactive Portfolio Website',
             'description': 'Modern, responsive portfolio website with dynamic project showcase and contact functionality.',
             'technologies': ['HTML', 'CSS', 'JavaScript', 'Python'],
-            'github': 'https://github.com/yourusername/portfolio',
-            'demo': 'https://yourportfolio.com',
+            'github': 'https://github.com/Chima042-hub/chima-njoku-portfolio',
+            'demo': 'https://chima042-hub.github.io/chima-njoku-portfolio/',
             'date': '2025-12-26'
         }
     ]
@@ -156,7 +172,13 @@ def increment_visitors():
 
 @app.route('/api/messages', methods=['GET'])
 def get_messages():
-    """Get all messages (admin only - add authentication in production!)"""
+    """Get all messages (admin only)."""
+    if not is_admin_authorized(request):
+        return jsonify({
+            'success': False,
+            'error': 'Unauthorized'
+        }), 403
+
     data = load_data()
     messages = data.get('messages', [])
     
@@ -203,16 +225,22 @@ def server_error(e):
 # ===== RUN SERVER =====
 
 if __name__ == '__main__':
+    port = int(os.getenv('PORT', '5000'))
+    debug_mode = os.getenv('FLASK_DEBUG', 'false').lower() == 'true'
+
     print("=" * 60)
     print("🚀 PORTFOLIO BACKEND API STARTING...")
     print("=" * 60)
     print("\n📡 API Endpoints Available:")
-    print("   • http://localhost:5000/")
-    print("   • http://localhost:5000/api/projects")
-    print("   • http://localhost:5000/api/contact")
-    print("   • http://localhost:5000/api/visitors")
-    print("   • http://localhost:5000/api/messages")
-    print("   • http://localhost:5000/api/stats")
+    print(f"   • http://localhost:{port}/")
+    print(f"   • http://localhost:{port}/api/projects")
+    print(f"   • http://localhost:{port}/api/contact")
+    print(f"   • http://localhost:{port}/api/visitors")
+    print(f"   • http://localhost:{port}/api/messages")
+    print(f"   • http://localhost:{port}/api/stats")
+    print("\n🔐 Security defaults:")
+    print("   • Admin endpoint requires PORTFOLIO_ADMIN_TOKEN + X-Admin-Token header")
+    print(f"   • Debug mode is {'ON' if debug_mode else 'OFF'}")
     print("\n💡 Your portfolio website can now:")
     print("   ✅ Send contact form messages")
     print("   ✅ Track visitor count")
@@ -221,4 +249,4 @@ if __name__ == '__main__':
     print("\n⚙️  Press CTRL+C to stop the server")
     print("=" * 60 + "\n")
     
-    app.run(debug=True, port=5000)
+    app.run(debug=debug_mode, port=port)
