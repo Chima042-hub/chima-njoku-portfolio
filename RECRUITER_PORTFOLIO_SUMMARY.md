@@ -1,24 +1,23 @@
 # Recruiter Portfolio Summary
 
 ## Professional Snapshot
-Joseph Chimakpa Njoku is an aspiring Cybersecurity Analyst and entry-level IT Support candidate based in Johannesburg, South Africa. He combines practical IT support foundations with hands-on cybersecurity project work and is currently in the TS Academy Cybersecurity Scholarship Program (started January 31, 2026; 4–5 month track in progress).
+Joseph Chimakpa Njoku is a cybersecurity professional-in-training focused on SOC operations and Security Engineering, based in Johannesburg, South Africa. He is advancing through the TS Academy Cybersecurity Scholarship Program (started January 31, 2026) with hands-on emphasis on log analysis, threat detection, incident response, and security automation. Completed the Google IT Support Professional Certificate with core IT fundamentals grounding.
 
 ## Core Strengths
-- IT support troubleshooting, customer support, and system fundamentals
-- Cybersecurity learning path with practical labs and simulations
-- Python-based automation and security tool development
-- Backend API development with Flask and REST principles
-- Strong self-learning discipline across structured platforms
+- SOC operations fundamentals and incident response workflows
+- SIEM and log analysis learning with hands-on lab practice
+- Cryptography and encryption tools development (AES-256, SHA hashing)
+- Python-based security automation and threat detection scripting
+- Home-lab security tooling practice: Wireshark, Nmap, packet analysis
+- Strong continuous-learning discipline across structured security platforms
 
 ## Portfolio Highlights
+- Windows Help Desk User Management Lab
+  - Password reset, account enable/disable workflow, and timestamped action logging
 - Cybersecurity Toolkit (Python)
   - File encryption/decryption workflows, hash utilities, and password security checks
-- Portfolio Backend API (Flask)
-  - REST API supporting contact workflows, visitor analytics, and portfolio data endpoints
-- Security Training Projects
-  - Hands-on educational scripts and SIEM-oriented log generation for detection practice
-- Frontend/Web Projects
-  - Multiple deployed web projects (HTML/CSS/JavaScript), including business and product-style interfaces
+- Security Training Platform
+  - Hands-on educational platform demonstrating password security, attack detection, and encryption concepts
 
 ## Current Cybersecurity Development
 - TS Academy Cybersecurity Scholarship Program (In Progress)
@@ -34,24 +33,25 @@ Joseph Chimakpa Njoku is an aspiring Cybersecurity Analyst and entry-level IT Su
   - Vulnerability assessment basics
 
 ## Practical Evidence in Repository
-- Full portfolio website with interactive UX features (search, FAQ accordion, form validation, accessibility handling, multilingual support)
+- Security-focused Python projects and cryptography implementations
 - Resume PDF and technical project documentation
-- Python security scripts and generated security log datasets for training/analysis
+- Python security scripts and threat detection/analysis tools
+- Lab notes and documented security workflows
 
 ## Why This Candidate Stands Out
-- Shows both breadth (IT support + web + backend) and direction (cybersecurity specialization)
-- Demonstrates practical execution, not just coursework claims
-- Maintains an actively updated portfolio and documentation set
-- Communicates technical work clearly in a recruiter-friendly format
+- Deep focus on security fundamentals with clear SOC/Security Engineer progression
+- Demonstrates practical execution through hands-on cryptography and security tooling
+- Maintains an actively updated portfolio with documentation and project evidence
+- Communicates security concepts clearly in a recruiter-friendly format
 
 ## Suggested Recruiter Positioning
 Best suited for:
-- Cybersecurity internship / junior SOC pathway
-- IT support roles with security exposure
-- Junior technical roles combining troubleshooting, scripting, and security operations growth
+- Primary (SOC-first): Junior SOC Analyst / Security Operations Analyst roles; Security Operations internship or entry-level pathway
+- Secondary (transition pathway): Entry-level IT Support roles that transition into SOC
+- Additional fit: Security Engineering intern or junior security automation roles; roles emphasizing threat detection, log analysis, and incident response
 
 ## Quick Interview Talking Points
 - “Walk me through your Cybersecurity Toolkit and how you approached encryption and hashing.”
-- “How does your Portfolio Backend API handle form data and metrics?”
+- "Tell me about your Security Training Platform and what threat detection concepts you learned."
 - “What are you currently learning in TS Academy, and how are you applying it in projects?”
 - “How have TryHackMe/LetsDefend/HTB labs influenced your incident response thinking?”

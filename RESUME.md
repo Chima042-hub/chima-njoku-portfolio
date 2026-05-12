@@ -1,7 +1,7 @@
 # CHIMA NJOKU
-**Entry-Level IT Support Candidate & Cybersecurity Learner**
+**Junior SOC Analyst Candidate | Security Operations Pathway | Google IT Support Certificate**
 
-Email: jennynjoku148@gmail.com | Phone: +27745739227 
+Email: ugonnachimakpa@gmail.com | Phone: +27745739227 
 Portfolio: https://chima042-hub.github.io/chima-njoku-portfolio/ | GitHub: https://github.com/Chima042-hub  
 LinkedIn: https://www.linkedin.com/in/chima-njoku-869690319/
 
@@ -9,15 +9,25 @@ LinkedIn: https://www.linkedin.com/in/chima-njoku-869690319/
 
 ## TECHNICAL SKILLS
 
-**Languages:** Python, JavaScript, HTML, CSS  
-**Frameworks & Libraries:** Flask, Flask-CORS, Cryptography, REST API  
-**Tools & Technologies:** Git, VS Code, JSON, API Development  
-**Security:** AES-256 Encryption, SHA-256/MD5 Hashing, Password Security, Threat Detection  
-**Concepts:** Object-Oriented Programming, Backend Development, Data Encryption, Web Security
+**Security & SOC:** SIEM fundamentals, log analysis, threat detection, incident response workflows, vulnerability assessment basics  
+**Systems & Networking:** Windows/Linux system administration, virtual machine practice, network troubleshooting, packet analysis preparation  
+**Languages:** Python (security scripting focus), Shell scripting (learning)  
+**Frameworks & Libraries:** Cryptography, Cryptographic hashing, AES-256 encryption  
+**Tools & Technologies:** Git, VS Code, Wireshark, Nmap, Aircrack-ng, Sysinternals, Security tooling  
+**Security Concepts:** AES-256 encryption, SHA-256/MD5 hashing, password security, threat detection, log analysis, vulnerability basics
 
 ---
 
 ## PROJECTS
+
+### Windows Help Desk User Management Lab | Windows CMD
+*March 2026*
+
+- Practiced local user administration workflow for Help Desk scenarios
+- Performed password reset simulation and account status control using `net user`
+- Created timestamped logs to document actions and improve accountability
+- Verified completed actions with account checks and `whoami`
+- **Technologies:** Windows CMD, Local User Administration, Troubleshooting Documentation
 
 ### Cybersecurity Toolkit | Python, Cryptography
 *December 2025*
@@ -29,20 +39,10 @@ LinkedIn: https://www.linkedin.com/in/chima-njoku-869690319/
 - Designed secure password input system with hidden typing and activity logging
 - **Technologies:** Python, Cryptography library, Hashlib, JSON, OOP principles
 
-### Portfolio Backend API | Python, Flask, REST API
+### Security Training Platform | Python
 *December 2025*
 
-- Built RESTful API with **7 endpoints** serving dynamic portfolio data
-- Implemented contact form backend with data validation and JSON storage
-- Developed visitor analytics tracking for portfolio usage insights
-- Created project showcase API serving structured data for frontend consumption
-- Configured CORS for cross-origin requests and error handling
-- **Technologies:** Flask, Flask-CORS, Python, JSON, REST API architecture
-
-### Interactive Security Training Platform | Python
-*December 2025*
-
-- Designed educational cybersecurity platform teaching password security and encryption
+- Designed educational cybersecurity platform teaching password security and encryption concepts
 - Built password strength checker analyzing length, complexity, and common patterns
 - Implemented attack detection simulator for brute force identification
 - Created log file analyzer detecting suspicious activity across network traffic
@@ -80,14 +80,13 @@ University Degree | Graduated 2014
 
 - Built 4 Python portfolio projects
 - Implemented industry-standard encryption algorithms (AES-256, SHA-256)
-- Developed functional REST API with multiple endpoints
 - Created security tools demonstrating practical cybersecurity concepts
 
 ---
 
 ## PROFESSIONAL SUMMARY
 
-Motivated entry-level IT and cybersecurity candidate with hands-on experience in **Python development**, **backend API design**, and **security-focused applications**. My technology journey began in 2005 through practical computer-center support tasks, expanded with website design training (Adobe Dreamweaver CS6) in 2015, and became a focused IT/cybersecurity path in 2024. Built **multiple documented projects** and completed **extensive practical study** across IT support, networking, and cybersecurity. Demonstrated ability to build useful portfolio tools, including REST APIs, encryption workflows, and security analyzers (including a **7-endpoint Flask API** and multi-algorithm security utilities). Strong foundation in **cryptography**, **web security**, and **technical troubleshooting**. Actively seeking entry-level IT support and cybersecurity opportunities.
+Motivated cybersecurity professional-in-training focused on SOC operations and Security Engineering. Completed Google IT Support Professional Certificate and currently advancing through TS Academy Cybersecurity Scholarship Program with emphasis on log analysis, threat detection, and incident response workflows. Hands-on experience includes home-lab security tool practice, Python-based security automation, encryption/cryptography projects, and SIEM fundamentals. Strong foundation in Windows/Linux systems administration and security tooling. Seeking junior SOC analyst or security operations roles, while open to entry-level IT Support opportunities that transition into SOC.
 
 ---
 

@@ -1,0 +1,27 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+
+# Runtime/app data
+portfolio_data.json
+*.log
+
+# Security toolkit demo outputs
+*.encrypted
+*.decrypted
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

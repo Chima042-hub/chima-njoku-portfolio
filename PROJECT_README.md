@@ -30,7 +30,7 @@ A professional Flask-based REST API that powers your portfolio website with cont
 
 ### Step 1: Install Dependencies
 ```bash
-cd my-portfolio
+cd chima-njoku-portfolio
 pip install -r requirements.txt
 ```
 
@@ -58,7 +58,7 @@ Open `contact_form_example.html` in your browser to see it in action!
 
 ## 🔧 Technologies Used
 
-- **Python 3.14** - Programming language
+- **Python 3.x** - Programming language
 - **Flask** - Web framework
 - **Flask-CORS** - Cross-origin requests
 - **JSON** - Data storage

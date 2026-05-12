@@ -9,7 +9,7 @@
 
 ### Hero Section
 - Internship CTA (`Internship Opportunity`) scrolls to Contact.
-- Resume CTA (`Download Resume (PDF)`) opens/downloads `Joseph_Njoku_IT_Support_CV.pdf`.
+- Resume CTA (`Download Resume (PDF)`) opens/downloads `Joseph_Njoku_SOC_Analyst_Resume.pdf`.
 
 ### Availability Section
 - Availability switch updates status text and visual state.
